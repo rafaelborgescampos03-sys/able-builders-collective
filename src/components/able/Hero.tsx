@@ -40,7 +40,7 @@ export function Hero() {
 
         <Reveal delay={220} className="mt-10">
           <a
-            href="#entrar"
+            href="https://www.ableforms.org/"
             className="group inline-flex items-center gap-3 border-b border-champagne/70 pb-2 text-[0.7rem] uppercase tracking-[0.22em] text-champagne transition-colors duration-300 hover:text-foreground"
           >
             Entrar no Radar ABLE

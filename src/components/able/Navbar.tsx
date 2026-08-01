@@ -49,7 +49,7 @@ export function Navbar() {
           </nav>
 
           <a
-            href="#entrar"
+            href="https://www.ableforms.org/"
             className="hidden shrink-0 border border-champagne/60 px-5 py-2.5 text-[0.65rem] uppercase tracking-[0.24em] text-champagne transition-colors duration-300 hover:bg-champagne hover:text-primary-foreground sm:inline-block"
           >
             Entrar no Radar ABLE
@@ -96,7 +96,7 @@ export function Navbar() {
             </a>
           ))}
           <a
-            href="#entrar"
+            href="https://www.ableforms.org/"
             onClick={() => setOpen(false)}
             className="mt-6 border border-champagne/60 px-5 py-3 text-center text-[0.65rem] uppercase tracking-[0.24em] text-champagne"
           >

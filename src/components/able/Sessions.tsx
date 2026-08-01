@@ -1,11 +1,7 @@
-import { sessions } from "@/data/able";
 import { ContentMarquee } from "./ContentMarquee";
 import { Reveal } from "./Reveal";
 
 export function Sessions() {
-  const feature = sessions[0];
-  if (!feature) return null;
-
   return (
     <section id="conteudo" className="border-y border-border bg-graphite/30">
       <div className="mx-auto max-w-[1400px] px-6 py-16 md:px-10 md:py-24">
@@ -17,7 +13,7 @@ export function Sessions() {
 
         <Reveal delay={100} className="mt-12 flex justify-center">
           <a
-            href={feature.href}
+            href="https://youtube.com/@able.ecosystem?si=hTYz8mpiSdxZ37rk"
             className="group inline-flex items-center gap-3 border-b border-champagne/70 pb-2 text-[0.7rem] uppercase tracking-[0.22em] text-champagne transition-colors duration-300 hover:text-foreground"
           >
             Confira nossos conteúdos
