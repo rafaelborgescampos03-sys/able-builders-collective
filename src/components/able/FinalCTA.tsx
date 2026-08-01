@@ -17,9 +17,10 @@ export function FinalCTA() {
       <Reveal delay={200}>
         <a
           href="mailto:hello@able.com.br?subject=Quero%20entrar%20no%20Radar%20ABLE"
-          className="mt-10 inline-block border border-champagne bg-champagne px-9 py-4 text-[0.65rem] uppercase tracking-[0.24em] text-primary-foreground transition-colors duration-300 hover:bg-transparent hover:text-champagne"
+          className="group mt-10 inline-flex items-center gap-3 border-b border-champagne/70 pb-2 text-[0.7rem] uppercase tracking-[0.22em] text-champagne transition-colors duration-300 hover:text-foreground"
         >
           Entrar no Radar ABLE
+          <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
         </a>
       </Reveal>
     </section>

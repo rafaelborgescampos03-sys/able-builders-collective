@@ -38,9 +38,10 @@ export function Hero() {
         <Reveal delay={220} className="mt-10">
           <a
             href="#entrar"
-            className="inline-block border border-champagne bg-champagne px-7 py-4 text-[0.65rem] uppercase tracking-[0.24em] text-primary-foreground transition-colors duration-300 hover:bg-transparent hover:text-champagne"
+            className="group inline-flex items-center gap-3 border-b border-champagne/70 pb-2 text-[0.7rem] uppercase tracking-[0.22em] text-champagne transition-colors duration-300 hover:text-foreground"
           >
             Entrar no Radar ABLE
+            <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
           </a>
         </Reveal>
       </div>
