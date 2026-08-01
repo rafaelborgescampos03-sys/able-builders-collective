@@ -2,7 +2,11 @@ import { sessions } from "@/data/able";
 import { Reveal } from "./Reveal";
 
 export function Sessions() {
-  const [feature, ...rest] = sessions;
+  const feature = sessions[0];
+  const rest = sessions.slice(1);
+
+  if (!feature) return null;
+
 
   return (
     <section id="sessions" className="border-y border-border bg-graphite/30">
