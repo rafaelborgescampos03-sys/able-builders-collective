@@ -47,7 +47,7 @@ export const sessions: Session[] = [
     guest: "Thiago Malta",
     company: "B2 Eventos",
     topic: "Como ele fatura +100 milhões com eventos?",
-    episode: "Session 01",
+    episode: "Conteúdo 01",
     image: sessionThiagoMalta,
     href: "#",
   },
