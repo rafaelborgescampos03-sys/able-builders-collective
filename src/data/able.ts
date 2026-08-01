@@ -1,3 +1,4 @@
+import rafaelCamposPhoto from "@/assets/rafael-campos.jpg.asset.json";
 import sessionThiagoMalta from "@/assets/session-thiago-malta.jpg";
 import foundationB2 from "@/assets/foundation-b2-eventos.png.asset.json";
 
@@ -9,8 +10,12 @@ export type Builder = {
   role: string;
   company: string;
   category: string;
+  age: number;
+  education: string;
+  location: string;
+  founded: string[];
+  photo?: string;
   instagram?: string;
-  linkedin?: string;
 };
 
 export const builders: Builder[] = [
@@ -19,22 +24,11 @@ export const builders: Builder[] = [
     role: "Founder & CEO",
     company: "ABLE",
     category: "Comunidade",
-    instagram: "#",
-    linkedin: "#",
-  },
-  {
-    name: "Isadora Nery",
-    role: "Head of Brand & Marketing",
-    company: "ABLE",
-    category: "Marketing",
-    instagram: "#",
-    linkedin: "#",
-  },
-  {
-    name: "Danilo Reis",
-    role: "Founder",
-    company: "Rastro Films",
-    category: "Audiovisual",
+    age: 23,
+    education: "Graduando em Engenharia Civil na UFG",
+    location: "Goiânia, Goiás",
+    founded: ["AURA Group", "ARUÊ Club", "ABLE Ecosystem"],
+    photo: rafaelCamposPhoto.url,
     instagram: "#",
   },
 ];
