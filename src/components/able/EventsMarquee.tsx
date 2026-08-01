@@ -40,13 +40,7 @@ export function EventsMarquee() {
               />
             </div>
             <div className="flex flex-col p-6">
-              <img
-                src={item.logo}
-                alt={`Logo ${item.name}`}
-                loading="lazy"
-                className="h-12 w-auto max-w-[70%] self-start object-contain object-left"
-              />
-              <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+              <p className="text-sm leading-relaxed text-muted-foreground">
                 {item.text}
               </p>
             </div>
