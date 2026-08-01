@@ -58,7 +58,7 @@ export function Experiences() {
           <Reveal
             key={item.name}
             delay={i * 100}
-            className="group flex flex-col bg-background transition-colors duration-500 hover:bg-card"
+            className="group flex flex-col bg-background"
           >
             <div className="overflow-hidden">
               <img
