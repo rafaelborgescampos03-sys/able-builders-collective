@@ -4,24 +4,24 @@ import { Reveal } from "./Reveal";
 
 export function Manifesto() {
   return (
-    <section className="mx-auto max-w-[1400px] px-6 py-12 md:px-10 md:py-16">
+    <section className="mx-auto max-w-[1400px] px-6 py-8 md:px-10 md:py-12">
       <Reveal className="eyebrow">Manifesto</Reveal>
 
       <Reveal delay={80}>
-        <h2 className="display mt-4 max-w-4xl text-[clamp(1.9rem,5.2vw,4.4rem)]">
+        <h2 className="display mt-2 max-w-4xl text-[clamp(1.9rem,5.2vw,4.4rem)]">
           Great companies are built on{" "}
           <span className="metal-text">strong foundations.</span>
         </h2>
       </Reveal>
 
-      <div className="mt-6 grid gap-8 md:grid-cols-[1fr_1.1fr] md:gap-12">
+      <div className="mt-4 grid gap-6 md:grid-cols-[1fr_1.1fr] md:gap-10">
         <Reveal delay={140}>
           <div className="hairline" />
           <img
             src={ableLogo.url}
             alt="ABLE — Ambitious, Builders, Leaders, Ecosystem"
             loading="lazy"
-            className="mt-4 w-full max-w-xs opacity-90"
+            className="mt-2 w-full max-w-xs opacity-90"
           />
         </Reveal>
 
