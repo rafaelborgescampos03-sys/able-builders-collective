@@ -15,7 +15,7 @@ export function Footer() {
           <div>
             <AbleLogo />
             <p className="mt-6 text-[0.62rem] uppercase tracking-[0.36em] text-champagne-dim">
-              Ambition • Builders • Leaders • Executing
+              Ambition • Builders • Leaders • Ecosystem
             </p>
             <p className="mt-6 max-w-xs text-xs leading-relaxed text-muted-foreground">
               Goiânia — Goiás, Brasil.

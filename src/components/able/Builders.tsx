@@ -23,12 +23,12 @@ export function Builders() {
         </Reveal>
       </div>
 
-      <div className="mt-20 grid gap-px border border-border bg-border sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-16 flex flex-wrap justify-center gap-6 md:mt-20">
         {builders.map((builder, i) => (
           <Reveal
             key={builder.name}
-            delay={(i % 3) * 90}
-            className="group flex min-h-64 flex-col justify-between bg-background p-7 transition-colors duration-500 hover:bg-card"
+            delay={i * 90}
+            className="group flex min-h-[14rem] w-full flex-col justify-between border border-border bg-background p-7 transition-colors duration-500 hover:bg-card sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] lg:max-w-sm"
           >
             <div className="flex items-start justify-between gap-4">
               <span className="text-[0.6rem] uppercase tracking-[0.26em] text-champagne-dim">
@@ -45,24 +45,14 @@ export function Builders() {
                 {builder.role} — {builder.company}
               </p>
 
-              <div className="mt-6 flex gap-5 text-[0.62rem] uppercase tracking-[0.2em]">
-                {builder.instagram ? (
-                  <a
-                    href={builder.instagram}
-                    className="text-muted-foreground transition-colors hover:text-champagne"
-                  >
-                    Instagram
-                  </a>
-                ) : null}
-                {builder.linkedin ? (
-                  <a
-                    href={builder.linkedin}
-                    className="text-muted-foreground transition-colors hover:text-champagne"
-                  >
-                    LinkedIn
-                  </a>
-                ) : null}
-              </div>
+              {builder.instagram ? (
+                <a
+                  href={builder.instagram}
+                  className="mt-6 inline-block text-[0.62rem] uppercase tracking-[0.2em] text-muted-foreground transition-colors hover:text-champagne"
+                >
+                  Instagram
+                </a>
+              ) : null}
             </div>
           </Reveal>
         ))}
