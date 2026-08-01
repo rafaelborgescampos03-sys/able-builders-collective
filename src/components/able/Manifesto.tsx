@@ -1,4 +1,4 @@
-import ableLogo from "@/assets/able-logo-white.png.asset.json";
+import ableLogo from "@/assets/able-logo-v2.png.asset.json";
 
 import { Reveal } from "./Reveal";
 
