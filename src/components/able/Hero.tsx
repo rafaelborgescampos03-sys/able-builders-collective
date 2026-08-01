@@ -48,7 +48,7 @@ export function Hero() {
               href="#entrar"
               className="border border-champagne bg-champagne px-7 py-4 text-[0.65rem] uppercase tracking-[0.24em] text-primary-foreground transition-colors duration-300 hover:bg-transparent hover:text-champagne"
             >
-              Quero fazer parte
+              Entrar no Radar ABLE
             </a>
             <a
               href="#ecossistema"
@@ -62,7 +62,7 @@ export function Hero() {
         <Reveal delay={400} className="mt-10">
           <div className="hairline" />
           <p className="mt-3 text-[0.62rem] uppercase tracking-[0.42em] text-champagne-dim">
-            Ambition • Builders • Leaders • Executing
+            Ambition • Builders • Leaders • Ecosystem
           </p>
         </Reveal>
       </div>

@@ -4,7 +4,7 @@ const pillars = [
   { title: "Ambition", text: "A vontade de ir além." },
   { title: "Builders", text: "Pessoas que transformam ideias em realidade." },
   { title: "Leaders", text: "Pessoas que assumem responsabilidade pelo que estão construindo." },
-  { title: "Executing", text: "Porque ideia sem execução não constrói nada." },
+  { title: "Ecosystem", text: "Conectando pessoas, ideias e oportunidades." },
 ];
 
 export function Pillars() {
