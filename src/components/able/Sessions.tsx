@@ -14,10 +14,10 @@ export function Sessions() {
       <div className="mx-auto max-w-[1400px] px-6 py-20 md:px-10 md:py-28">
         <div className="grid gap-6 md:grid-cols-[1fr_1fr] md:items-end">
           <div>
-            <Reveal className="eyebrow">Conteúdo</Reveal>
+            <Reveal className="eyebrow">Builders</Reveal>
             <Reveal delay={80}>
               <h2 className="display mt-6 text-[clamp(2.2rem,7vw,5.5rem)]">
-                CONTEÚDO
+                BUILDERS
               </h2>
             </Reveal>
           </div>
@@ -30,35 +30,17 @@ export function Sessions() {
           </Reveal>
         </div>
 
-        <Reveal delay={120} className="group mt-14 grid gap-10 md:grid-cols-[1.15fr_1fr] md:items-center">
-          <div className="overflow-hidden border border-border">
-            <img
-              src={feature.image}
-              alt={`${feature.guest} — ${feature.topic}`}
-              width={1024}
-              height={1280}
-              loading="lazy"
-              className="aspect-[4/3] w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105"
-            />
-          </div>
-          <div>
-            <span className="text-[0.62rem] uppercase tracking-[0.3em] text-champagne-dim">
-              {feature.episode}
-            </span>
-            <h3 className="display mt-6 text-[clamp(1.6rem,3.6vw,3rem)]">{feature.topic}</h3>
-            <p className="mt-6 text-xs uppercase tracking-[0.18em] text-muted-foreground">
-              {feature.guest} — {feature.company}
-            </p>
-            <a
-              href={feature.href}
-              className="mt-10 inline-block border border-champagne/60 px-7 py-4 text-[0.65rem] uppercase tracking-[0.24em] text-champagne transition-colors duration-300 hover:bg-champagne hover:text-primary-foreground"
-            >
-              Assistir
-            </a>
-          </div>
+        <ContentMarquee />
+
+        <Reveal delay={100} className="mt-14 flex justify-center">
+          <a
+            href={feature.href}
+            className="inline-block border border-champagne/60 px-7 py-4 text-[0.65rem] uppercase tracking-[0.24em] text-champagne transition-colors duration-300 hover:bg-champagne hover:text-primary-foreground"
+          >
+            Confira nossos conteúdos
+          </a>
         </Reveal>
 
-        <ContentMarquee />
 
         {rest.length > 0 && (
           <div className="mt-20 grid gap-px border border-border bg-border sm:grid-cols-2">
