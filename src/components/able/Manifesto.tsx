@@ -26,7 +26,7 @@ export function Manifesto() {
         </Reveal>
 
 
-        <div className="space-y-7 text-sm leading-relaxed text-muted-foreground md:text-base">
+        <div className="space-y-4 text-sm leading-relaxed text-muted-foreground md:text-base">
           <Reveal delay={180} as="p">
             A ABLE nasceu para aproximar pessoas que compartilham uma mesma
             característica: <span className="text-foreground">ambição para construir.</span>
