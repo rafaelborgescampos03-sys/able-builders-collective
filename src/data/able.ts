@@ -1,6 +1,4 @@
-import session1 from "@/assets/session-1.jpg";
-import session2 from "@/assets/session-2.jpg";
-import session3 from "@/assets/session-3.jpg";
+import sessionThiagoMalta from "@/assets/session-thiago-malta.jpg";
 
 /** Placeholder content — replace with CMS/database data later. */
 
@@ -50,27 +48,11 @@ export type Session = {
 
 export const sessions: Session[] = [
   {
-    guest: "Rafael Campos",
-    company: "ABLE",
-    topic: "Como construir uma comunidade que constrói empresas",
+    guest: "Thiago Malta",
+    company: "B2 Eventos",
+    topic: "Como ele fatura +100 milhões com eventos?",
     episode: "Session 01",
-    image: session1,
-    href: "#",
-  },
-  {
-    guest: "Marina Toledo",
-    company: "Empresa X",
-    topic: "Escalar produto sem perder o que importa",
-    episode: "Session 02",
-    image: session2,
-    href: "#",
-  },
-  {
-    guest: "Bruno Vasques & Luiza Prado",
-    company: "Empresa Y",
-    topic: "Sociedade, confiança e decisões difíceis",
-    episode: "Session 03",
-    image: session3,
+    image: sessionThiagoMalta,
     href: "#",
   },
 ];
