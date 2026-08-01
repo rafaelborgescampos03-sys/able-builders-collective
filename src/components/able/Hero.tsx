@@ -24,7 +24,7 @@ export function Hero() {
       />
       <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/40" />
 
-      <div className="relative mx-auto w-full max-w-[1400px] px-6 pb-20 pt-36 md:px-10 md:pb-28">
+      <div className="relative mx-auto w-full max-w-[1400px] px-6 pb-12 pt-36 md:px-10 md:pb-16">
         <Reveal className="eyebrow">Goiânia • Brasil</Reveal>
 
         <Reveal delay={100}>
@@ -35,7 +35,7 @@ export function Hero() {
           </h1>
         </Reveal>
 
-        <div className="mt-12 grid gap-10 md:grid-cols-[minmax(0,1fr)_auto] md:items-end">
+        <div className="mt-10 grid gap-8 md:grid-cols-[minmax(0,1fr)_auto] md:items-end">
           <Reveal delay={200} className="max-w-md">
             <p className="text-sm leading-relaxed text-muted-foreground md:text-base">
               Uma comunidade para quem não espera o futuro acontecer.
@@ -59,9 +59,9 @@ export function Hero() {
           </Reveal>
         </div>
 
-        <Reveal delay={400} className="mt-16">
+        <Reveal delay={400} className="mt-10">
           <div className="hairline" />
-          <p className="mt-5 text-[0.62rem] uppercase tracking-[0.42em] text-champagne-dim">
+          <p className="mt-3 text-[0.62rem] uppercase tracking-[0.42em] text-champagne-dim">
             Ambition • Builders • Leaders • Executing
           </p>
         </Reveal>
