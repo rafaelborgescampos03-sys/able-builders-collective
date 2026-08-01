@@ -53,7 +53,7 @@ export function Navbar() {
             href="#entrar"
             className="hidden shrink-0 border border-champagne/60 px-5 py-2.5 text-[0.65rem] uppercase tracking-[0.24em] text-champagne transition-colors duration-300 hover:bg-champagne hover:text-primary-foreground sm:inline-block"
           >
-            Entrar na ABLE
+            Entrar no Radar ABLE
           </a>
 
           <button
@@ -101,7 +101,7 @@ export function Navbar() {
             onClick={() => setOpen(false)}
             className="mt-6 border border-champagne/60 px-5 py-3 text-center text-[0.65rem] uppercase tracking-[0.24em] text-champagne"
           >
-            Entrar na ABLE
+            Entrar no Radar ABLE
           </a>
         </nav>
       </div>
