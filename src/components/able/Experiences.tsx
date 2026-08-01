@@ -73,7 +73,7 @@ export function Experiences() {
                 src={item.logo}
                 alt={`Logo ${item.name}`}
                 loading="lazy"
-                className="h-20 w-auto max-w-[80%] self-start object-contain object-left"
+                className="h-16 w-auto max-w-[70%] self-start object-contain object-left"
               />
               <span className="mt-7 text-[0.6rem] uppercase tracking-[0.3em] text-champagne-dim">
                 {item.kicker}
