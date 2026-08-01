@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 
 import { AbleSummit } from "@/components/able/AbleSummit";
-import { AbleTable } from "@/components/able/AbleTable";
+import { Experiences } from "@/components/able/Experiences";
 import { BuilderKit } from "@/components/able/BuilderKit";
 import { Builders } from "@/components/able/Builders";
 import { Content } from "@/components/able/Content";
@@ -41,7 +41,7 @@ function Index() {
         <Pillars />
         <Builders />
         <Sessions />
-        <AbleTable />
+        <Experiences />
         <AbleSummit />
         <FoundationWall />
         <BuilderKit />
