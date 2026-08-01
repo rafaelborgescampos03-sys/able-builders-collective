@@ -24,8 +24,8 @@ export function Builders() {
       </div>
 
       <div className="mt-16 border border-border md:mt-20">
-        <div className="grid md:grid-cols-[0.42fr_1.58fr]">
-          <Reveal className="relative aspect-[3/4] w-full overflow-hidden bg-muted md:aspect-[3/4]">
+        <div className="grid md:grid-cols-[0.55fr_1.45fr]">
+          <Reveal className="relative aspect-[3/4] w-full overflow-hidden bg-muted md:aspect-auto">
             {builder.photo ? (
               <img
                 src={builder.photo}
@@ -39,39 +39,45 @@ export function Builders() {
             )}
           </Reveal>
 
-          <Reveal delay={120} className="flex flex-col justify-between p-8 md:p-14 lg:p-16">
+          <Reveal delay={120} className="flex flex-col justify-center p-8 md:p-10 lg:p-12">
             <div>
-              <p className="text-xs uppercase tracking-[0.26em] text-champagne-dim">
+              <p className="text-[0.65rem] uppercase tracking-[0.26em] text-champagne-dim">
                 {builder.role} — {builder.company}
               </p>
-              <h3 className="display mt-5 text-4xl md:text-6xl lg:text-7xl">{builder.name}</h3>
+              <h3 className="display mt-3 text-3xl md:text-5xl lg:text-6xl">{builder.name}</h3>
 
-              <div className="mt-10 space-y-6 text-base text-muted-foreground md:text-lg">
+              <div className="mt-8 grid gap-6 sm:grid-cols-3">
                 <p>
-                  <span className="block text-xs uppercase tracking-[0.2em] text-foreground/60">
+                  <span className="block text-[0.65rem] uppercase tracking-[0.2em] text-foreground/60">
                     Idade
                   </span>
-                  {builder.age} anos
+                  <span className="text-base text-muted-foreground md:text-lg">
+                    {builder.age} anos
+                  </span>
                 </p>
-                <p>
-                  <span className="block text-xs uppercase tracking-[0.2em] text-foreground/60">
+                <p className="sm:col-span-2">
+                  <span className="block text-[0.65rem] uppercase tracking-[0.2em] text-foreground/60">
                     Formação
                   </span>
-                  {builder.education}
+                  <span className="text-base text-muted-foreground md:text-lg">
+                    {builder.education}
+                  </span>
                 </p>
                 <p>
-                  <span className="block text-xs uppercase tracking-[0.2em] text-foreground/60">
+                  <span className="block text-[0.65rem] uppercase tracking-[0.2em] text-foreground/60">
                     Local
                   </span>
-                  {builder.location}
+                  <span className="text-base text-muted-foreground md:text-lg">
+                    {builder.location}
+                  </span>
                 </p>
-                <div>
-                  <span className="block text-xs uppercase tracking-[0.2em] text-foreground/60">
+                <div className="sm:col-span-2">
+                  <span className="block text-[0.65rem] uppercase tracking-[0.2em] text-foreground/60">
                     Founder of
                   </span>
-                  <ul className="mt-3 space-y-2">
+                  <ul className="mt-2 flex flex-wrap gap-x-6 gap-y-1">
                     {builder.founded.map((company) => (
-                      <li key={company} className="flex items-center gap-3 text-foreground/80">
+                      <li key={company} className="flex items-center gap-2 text-base text-foreground/80 md:text-lg">
                         <span className="text-champagne">—</span>
                         {company}
                       </li>
@@ -84,7 +90,7 @@ export function Builders() {
             {builder.instagram ? (
               <a
                 href={builder.instagram}
-                className="mt-12 inline-block self-start border border-border px-8 py-4 text-xs uppercase tracking-[0.24em] transition-colors duration-300 hover:border-champagne hover:text-champagne"
+                className="mt-8 inline-block self-start border border-border px-7 py-3.5 text-[0.65rem] uppercase tracking-[0.24em] transition-colors duration-300 hover:border-champagne hover:text-champagne"
               >
                 Instagram
               </a>
