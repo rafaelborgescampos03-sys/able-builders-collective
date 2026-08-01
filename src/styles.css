@@ -108,9 +108,9 @@
 @utility metal-text {
   background: linear-gradient(
     100deg,
-    oklch(0.72 0.002 90),
-    oklch(0.98 0.001 90),
-    oklch(0.76 0.002 90)
+    oklch(0.74 0.012 82),
+    oklch(0.97 0.006 85),
+    oklch(0.78 0.014 82)
   );
   background-clip: text;
   color: transparent;
