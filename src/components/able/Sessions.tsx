@@ -1,4 +1,5 @@
 import { sessions } from "@/data/able";
+import { ContentMarquee } from "./ContentMarquee";
 import { Reveal } from "./Reveal";
 
 export function Sessions() {
