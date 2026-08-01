@@ -5,7 +5,7 @@ import { Reveal } from "./Reveal";
 export function Manifesto() {
   return (
     <section className="mx-auto max-w-[1400px] px-6 pb-6 pt-2 md:px-10 md:pb-8 md:pt-4">
-      <Reveal className="eyebrow">Manifesto</Reveal>
+
 
 
 
