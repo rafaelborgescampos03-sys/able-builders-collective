@@ -3,7 +3,6 @@ import { createFileRoute } from "@tanstack/react-router";
 
 import { Experiences } from "@/components/able/Experiences";
 
-import { Builders } from "@/components/able/Builders";
 import { Sponsors } from "@/components/able/Sponsors";
 import { FinalCTA } from "@/components/able/FinalCTA";
 import { Footer } from "@/components/able/Footer";
@@ -39,7 +38,6 @@ function Index() {
         <Hero />
         <Manifesto />
         <Pillars />
-        <Builders />
         <Sessions />
         <Experiences />
         
