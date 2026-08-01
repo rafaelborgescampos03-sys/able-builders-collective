@@ -13,7 +13,7 @@ export function Hero() {
   }, []);
 
   return (
-    <section id="top" className="relative flex min-h-[85svh] items-end overflow-hidden">
+    <section id="top" className="relative flex min-h-[75svh] items-end overflow-hidden">
       <img
         src={heroImage}
         alt="Composição arquitetônica abstrata em preto com linhas douradas"
