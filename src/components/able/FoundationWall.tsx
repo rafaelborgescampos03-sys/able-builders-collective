@@ -24,7 +24,7 @@ export function FoundationWall() {
         </Reveal>
       </div>
 
-      <div className="mt-20 grid gap-3 sm:grid-cols-2 lg:grid-cols-2">
+      <div className="mx-auto mt-20 grid max-w-xl gap-3">
         {foundation.map((block, i) => (
           <Reveal
             key={block.number}
@@ -36,9 +36,10 @@ export function FoundationWall() {
                 src={block.image}
                 alt={`Bloco ${block.number} — ${block.name}`}
                 loading="lazy"
-                className="aspect-[4/3] w-full object-cover opacity-90 transition-transform duration-[1200ms] ease-out group-hover:scale-[1.03]"
+                className="w-full object-contain opacity-90 transition-transform duration-[1200ms] ease-out group-hover:scale-[1.03]"
               />
             )}
+
             <div className="flex items-start justify-between p-6 pb-0">
               <span className="text-[0.6rem] tracking-[0.28em] text-muted-foreground transition-colors duration-500 group-hover:text-champagne-dim">
                 {block.number}
