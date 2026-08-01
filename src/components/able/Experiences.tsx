@@ -60,33 +60,29 @@ export function Experiences() {
             delay={i * 100}
             className="group flex flex-col bg-background transition-colors duration-500 hover:bg-card"
           >
-            <div className="relative overflow-hidden">
+            <div className="overflow-hidden">
               <img
                 src={item.image}
                 alt={item.name}
                 loading="lazy"
-                className="aspect-[4/3] w-full object-cover opacity-60 transition-all duration-[1200ms] ease-out group-hover:scale-105 group-hover:opacity-80"
+                className="aspect-[4/3] w-full object-cover opacity-70 transition-all duration-[1200ms] ease-out group-hover:scale-105 group-hover:opacity-90"
               />
-              <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-t from-background via-background/50 to-transparent">
-                <img
-                  src={item.logo}
-                  alt={`Logo ${item.name}`}
-                  loading="lazy"
-                  className="h-24 w-auto max-w-[70%] object-contain mix-blend-screen"
-                />
-              </div>
             </div>
             <div className="flex flex-1 flex-col p-7">
-              <span className="text-[0.6rem] uppercase tracking-[0.3em] text-champagne-dim">
+              <img
+                src={item.logo}
+                alt={`Logo ${item.name}`}
+                loading="lazy"
+                className="h-20 w-auto max-w-[80%] self-start object-contain object-left"
+              />
+              <span className="mt-7 text-[0.6rem] uppercase tracking-[0.3em] text-champagne-dim">
                 {item.kicker}
               </span>
-              <h3 className="display mt-4 text-lg transition-colors duration-500 group-hover:text-champagne">
-                {item.name}
-              </h3>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
                 {item.text}
               </p>
             </div>
+
           </Reveal>
         ))}
       </div>
