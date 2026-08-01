@@ -4,7 +4,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Experiences } from "@/components/able/Experiences";
 
 import { Builders } from "@/components/able/Builders";
-import { Content } from "@/components/able/Content";
+import { Sponsors } from "@/components/able/Sponsors";
 import { FinalCTA } from "@/components/able/FinalCTA";
 import { Footer } from "@/components/able/Footer";
 import { FoundationWall } from "@/components/able/FoundationWall";
@@ -45,7 +45,7 @@ function Index() {
         
         <FoundationWall />
         
-        <Content />
+        <Sponsors />
         <Stats />
         <FinalCTA />
       </main>

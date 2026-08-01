@@ -8,7 +8,7 @@ const links = [
   { label: "Builders", href: "#builders" },
   { label: "Sessions", href: "#sessions" },
   
-  { label: "Conteúdo", href: "#conteudo" },
+  { label: "Patrocinadores", href: "#patrocinadores" },
 ];
 
 export function Navbar() {
