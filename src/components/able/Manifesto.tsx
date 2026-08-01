@@ -21,7 +21,7 @@ export function Manifesto() {
         </Reveal>
 
         <Reveal delay={300} className="mt-10">
-          <div className="hairline w-24" />
+          <div className="h-px w-20 bg-gradient-to-r from-transparent via-champagne/60 to-transparent" />
         </Reveal>
       </div>
     </section>
