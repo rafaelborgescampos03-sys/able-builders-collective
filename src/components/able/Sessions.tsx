@@ -16,7 +16,7 @@ export function Sessions() {
             <Reveal className="eyebrow">Conteúdo</Reveal>
             <Reveal delay={80}>
               <h2 className="display mt-8 text-[clamp(2.2rem,7vw,5.5rem)]">
-                ABLE <span className="metal-text">Sessions</span>
+                BUILDING <span className="metal-text">ABLE</span>
               </h2>
             </Reveal>
           </div>
