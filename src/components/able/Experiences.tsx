@@ -72,7 +72,7 @@ export function Experiences() {
                   src={item.logo}
                   alt={`Logo ${item.name}`}
                   loading="lazy"
-                  className="h-24 w-auto max-w-[70%] object-contain"
+                  className="h-24 w-auto max-w-[70%] object-contain mix-blend-screen"
                 />
               </div>
             </div>
