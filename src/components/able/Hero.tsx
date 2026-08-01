@@ -24,7 +24,7 @@ export function Hero() {
       />
       <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/40" />
 
-      <div className="relative mx-auto w-full max-w-[1400px] px-6 pb-1 pt-28 md:px-10 md:pb-2 md:pt-32">
+      <div className="relative mx-auto w-full max-w-[1400px] px-6 pb-14 pt-28 md:px-10 md:pb-20 md:pt-32">
         <Reveal className="eyebrow">Goiânia • Brasil</Reveal>
 
         <Reveal delay={100}>
@@ -35,24 +35,16 @@ export function Hero() {
           </h1>
         </Reveal>
 
-        <div className="mt-8 grid gap-6 md:grid-cols-[minmax(0,1fr)_auto] md:items-end">
-          <Reveal delay={200} className="max-w-md">
-            <p className="text-sm leading-relaxed text-muted-foreground md:text-base">
-              Uma comunidade para quem não espera o futuro acontecer.
-            </p>
-          </Reveal>
-
-          <Reveal delay={300} className="flex flex-wrap items-center gap-4">
-            <a
-              href="#entrar"
-              className="border border-champagne bg-champagne px-7 py-4 text-[0.65rem] uppercase tracking-[0.24em] text-primary-foreground transition-colors duration-300 hover:bg-transparent hover:text-champagne"
-            >
-              Entrar no Radar ABLE
-            </a>
-          </Reveal>
-
-        </div>
+        <Reveal delay={220} className="mt-10">
+          <a
+            href="#entrar"
+            className="inline-block border border-champagne bg-champagne px-7 py-4 text-[0.65rem] uppercase tracking-[0.24em] text-primary-foreground transition-colors duration-300 hover:bg-transparent hover:text-champagne"
+          >
+            Entrar no Radar ABLE
+          </a>
+        </Reveal>
       </div>
+
     </section>
   );
 }
