@@ -4,7 +4,7 @@ import { Reveal } from "./Reveal";
 
 export function Manifesto() {
   return (
-    <section className="mx-auto max-w-[1400px] px-6 py-6 md:px-10 md:py-8">
+    <section className="mx-auto max-w-[1400px] px-6 pb-6 pt-4 md:px-10 md:pb-8 md:pt-6">
       <Reveal className="eyebrow">Manifesto</Reveal>
 
       <Reveal delay={80}>
