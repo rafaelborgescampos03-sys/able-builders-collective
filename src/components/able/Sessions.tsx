@@ -1,4 +1,5 @@
 import { sessions } from "@/data/able";
+import { ContentMarquee } from "./ContentMarquee";
 import { Reveal } from "./Reveal";
 
 export function Sessions() {
@@ -56,6 +57,8 @@ export function Sessions() {
             </a>
           </div>
         </Reveal>
+
+        <ContentMarquee />
 
         {rest.length > 0 && (
           <div className="mt-20 grid gap-px border border-border bg-border sm:grid-cols-2">

@@ -53,6 +53,20 @@ export const sessions: Session[] = [
   },
 ];
 
+/**
+ * Fotos do carrossel de conteúdo.
+ * Para adicionar um novo vídeo/entrevista, basta acrescentar um item aqui.
+ */
+export type ContentPhoto = {
+  image: string;
+  caption: string;
+};
+
+export const contentGallery: ContentPhoto[] = [
+  { image: sessionThiagoMalta, caption: "Thiago Malta — B2 Eventos" },
+];
+
+
 export type FoundationBlock = {
   name: string;
   year: string;
