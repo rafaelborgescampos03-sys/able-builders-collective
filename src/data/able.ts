@@ -1,4 +1,6 @@
 import sessionThiagoMalta from "@/assets/session-thiago-malta.jpg";
+import foundationB2 from "@/assets/foundation-b2-eventos.png.asset.json";
+
 
 /** Placeholder content — replace with CMS/database data later. */
 
@@ -57,18 +59,24 @@ export const sessions: Session[] = [
   },
 ];
 
-export type FoundationBlock = { name: string; year: string; number: string };
+export type FoundationBlock = {
+  name: string;
+  year: string;
+  number: string;
+  guest?: string;
+  image?: string;
+};
 
 export const foundation: FoundationBlock[] = [
-  { name: "RANCHERIO", year: "2026", number: "#001" },
-  { name: "FRIATO", year: "2026", number: "#002" },
-  { name: "TERRAL", year: "2026", number: "#003" },
-  { name: "SICOOB", year: "2026", number: "#004" },
-  { name: "ORION", year: "2026", number: "#005" },
-  { name: "VALE ALTA", year: "2026", number: "#006" },
-  { name: "CERRADO CO.", year: "2026", number: "#007" },
-  { name: "NORTE CAPITAL", year: "2026", number: "#008" },
+  {
+    name: "B2 EVENTOS",
+    year: "2026",
+    number: "#001",
+    guest: "Thiago Malta",
+    image: foundationB2.url,
+  },
 ];
+
 
 export type Article = {
   title: string;
