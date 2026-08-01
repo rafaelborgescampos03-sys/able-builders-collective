@@ -1,8 +1,7 @@
 import { AbleLogo } from "./Logo";
 
 const links = [
-  { label: "Instagram", href: "#" },
-  { label: "LinkedIn", href: "#" },
+  { label: "Instagram", href: "https://www.instagram.com/able.ecosystem/?utm_source=ig_web_button_share_sheet" },
   { label: "YouTube", href: "#" },
   { label: "Contato", href: "mailto:hello@able.com.br" },
 ];
