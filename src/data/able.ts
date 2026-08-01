@@ -29,7 +29,7 @@ export const builders: Builder[] = [
     location: "Goiânia, Goiás",
     founded: ["AURA Group", "ARUÊ Club", "ABLE Ecosystem"],
     photo: rafaelCamposPhoto.url,
-    instagram: "#",
+    instagram: "https://www.instagram.com/able.ecosystem/?utm_source=ig_web_button_share_sheet",
   },
 ];
 
