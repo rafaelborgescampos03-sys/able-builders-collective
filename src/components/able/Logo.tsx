@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 
-import ableLogo from "@/assets/able-logo-white.png.asset.json";
+import ableLogo from "@/assets/able-logo-v2.png.asset.json";
 
 /** Small decorative marker used in lists (no invented brand shape). */
 export function AbleMark({ className }: { className?: string }) {
