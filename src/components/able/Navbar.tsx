@@ -7,7 +7,7 @@ const links = [
   { label: "O Ecossistema", href: "#ecossistema" },
   { label: "Builders", href: "#builders" },
   { label: "Sessions", href: "#sessions" },
-  { label: "Summit", href: "#summit" },
+  
   { label: "Conteúdo", href: "#conteudo" },
 ];
 
