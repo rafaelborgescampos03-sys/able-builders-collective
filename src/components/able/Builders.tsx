@@ -2,7 +2,7 @@ import { builders } from "@/data/able";
 import { Reveal } from "./Reveal";
 
 export function Builders() {
-  const builder = builders[0];
+  const builder = builders[0]!;
 
   return (
     <section id="builders" className="mx-auto max-w-[1400px] px-6 py-28 md:px-10 md:py-40">
