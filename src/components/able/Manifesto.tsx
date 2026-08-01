@@ -4,37 +4,25 @@ import { Reveal } from "./Reveal";
 
 export function Manifesto() {
   return (
-    <section className="mx-auto max-w-[1400px] px-6 pb-6 pt-2 md:px-10 md:pb-8 md:pt-4">
-
-
-
-
-
-      <div className="mt-4 grid gap-6 md:grid-cols-[1fr_1.1fr] md:gap-10">
-        <Reveal delay={140}>
-          <div className="hairline" />
+    <section className="mx-auto max-w-[1400px] px-6 pb-16 pt-14 md:px-10 md:pb-24 md:pt-20">
+      <div className="mx-auto flex max-w-2xl flex-col items-center text-center">
+        <Reveal delay={120}>
           <img
             src={ableLogo.url}
             alt="ABLE — Ambitious, Builders, Leaders, Ecosystem"
             loading="lazy"
-            className="mt-2 w-full max-w-xs opacity-90"
+            className="w-full max-w-[15rem] opacity-90 md:max-w-xs"
           />
         </Reveal>
 
+        <Reveal delay={220} as="p" className="mt-10 text-base leading-relaxed text-muted-foreground md:text-lg">
+          Uma comunidade de jovens que compartilham a mesma característica:{" "}
+          <span className="text-foreground">ambição para construir.</span>
+        </Reveal>
 
-        <div className="space-y-4 text-sm leading-relaxed text-muted-foreground md:text-base">
-          <Reveal delay={180} as="p">
-            A ABLE nasceu para aproximar pessoas que compartilham uma mesma
-            característica: <span className="text-foreground">ambição para construir.</span>
-          </Reveal>
-          <Reveal delay={260} as="p">
-            Não somos apenas uma comunidade. Somos um ambiente de conexão,
-            aprendizado, experiências e execução.
-          </Reveal>
-          <Reveal delay={340} as="p" className="text-foreground">
-            Porque grandes projetos não são construídos sozinhos.
-          </Reveal>
-        </div>
+        <Reveal delay={300} className="mt-10">
+          <div className="hairline w-24" />
+        </Reveal>
       </div>
     </section>
   );
