@@ -12,6 +12,11 @@ export function Sponsors() {
         </h2>
       </Reveal>
       <Reveal delay={120}>
+        <p className="mx-auto mt-6 max-w-md text-sm leading-relaxed text-muted-foreground">
+          Interesse em apoiar projetos e eventos que conectam os builders do futuro?
+        </p>
+      </Reveal>
+      <Reveal delay={160}>
         <a
           href="mailto:contato@ableecosystem.com?subject=Quero%20ser%20Founding%20Partner%20ABLE"
           className="group mt-10 inline-flex items-center gap-3 border-b border-champagne/70 pb-2 text-[0.7rem] uppercase tracking-[0.22em] text-champagne transition-colors duration-300 hover:text-foreground"
