@@ -39,7 +39,6 @@ export function Hero() {
           <Reveal delay={200} className="max-w-md">
             <p className="text-sm leading-relaxed text-muted-foreground md:text-base">
               Uma comunidade para quem não espera o futuro acontecer.
-              <span className="block text-foreground">Constrói.</span>
             </p>
           </Reveal>
 
@@ -50,13 +49,8 @@ export function Hero() {
             >
               Entrar no Radar ABLE
             </a>
-            <a
-              href="#ecossistema"
-              className="border border-border px-7 py-4 text-[0.65rem] uppercase tracking-[0.24em] text-foreground transition-colors duration-300 hover:border-champagne hover:text-champagne"
-            >
-              Conheça a ABLE
-            </a>
           </Reveal>
+
         </div>
       </div>
     </section>
