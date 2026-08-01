@@ -1,3 +1,5 @@
+import ableLogo from "@/assets/able-horizontal.png.asset.json";
+
 import { Reveal } from "./Reveal";
 
 export function Manifesto() {
@@ -15,7 +17,14 @@ export function Manifesto() {
       <div className="mt-16 grid gap-12 md:grid-cols-[1fr_1.1fr] md:gap-20">
         <Reveal delay={140}>
           <div className="hairline" />
+          <img
+            src={ableLogo.url}
+            alt="ABLE — Ambitious, Builders, Leaders, Ecosystem"
+            loading="lazy"
+            className="mt-10 w-full max-w-sm opacity-90"
+          />
         </Reveal>
+
 
         <div className="space-y-7 text-sm leading-relaxed text-muted-foreground md:text-base">
           <Reveal delay={180} as="p">
