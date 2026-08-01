@@ -4,12 +4,12 @@ import { Reveal } from "./Reveal";
 
 export function FoundationWall() {
   return (
-    <section className="mx-auto max-w-[1400px] px-6 py-28 md:px-10 md:py-40">
-      <div className="grid gap-10 md:grid-cols-[1fr_1fr] md:items-end">
+    <section className="mx-auto max-w-[1400px] px-6 py-20 md:px-10 md:py-28">
+      <div className="grid gap-8 md:grid-cols-[1fr_1fr] md:items-end">
         <div>
           <Reveal className="eyebrow">Parceiros fundadores</Reveal>
           <Reveal delay={80}>
-            <h2 className="display mt-8 text-[clamp(2.2rem,7vw,5.5rem)]">
+            <h2 className="display mt-6 text-[clamp(2.2rem,7vw,5.5rem)]">
               The <span className="metal-text">Foundation</span>
             </h2>
           </Reveal>
@@ -24,7 +24,7 @@ export function FoundationWall() {
         </Reveal>
       </div>
 
-      <div className="mx-auto mt-20 grid max-w-xl gap-3">
+      <div className="mx-auto mt-14 grid max-w-xl gap-3">
         {foundation.map((block, i) => (
           <Reveal
             key={block.number}

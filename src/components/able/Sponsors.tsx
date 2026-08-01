@@ -2,12 +2,12 @@ import { Reveal } from "./Reveal";
 
 export function Sponsors() {
   return (
-    <section id="patrocinadores" className="mx-auto max-w-[1400px] px-6 py-28 md:px-10 md:py-40">
-      <div className="grid gap-12 md:grid-cols-2 md:items-end md:gap-20">
+    <section id="patrocinadores" className="mx-auto max-w-[1400px] px-6 py-20 md:px-10 md:py-28">
+      <div className="grid gap-8 md:grid-cols-2 md:items-end md:gap-16">
         <div>
           <Reveal className="eyebrow">Parcerias</Reveal>
           <Reveal delay={80}>
-            <h2 className="display mt-8 text-[clamp(2.2rem,5.2vw,4.2rem)] leading-[0.95]">
+            <h2 className="display mt-6 text-[clamp(2.2rem,5.2vw,4.2rem)] leading-[0.95]">
               Construa <span className="metal-text">com a ABLE.</span>
             </h2>
           </Reveal>

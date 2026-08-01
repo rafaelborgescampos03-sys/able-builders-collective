@@ -10,12 +10,12 @@ export function Sessions() {
 
   return (
     <section id="conteudo" className="border-y border-border bg-graphite/30">
-      <div className="mx-auto max-w-[1400px] px-6 py-28 md:px-10 md:py-36">
-        <div className="grid gap-8 md:grid-cols-[1fr_1fr] md:items-end">
+      <div className="mx-auto max-w-[1400px] px-6 py-20 md:px-10 md:py-28">
+        <div className="grid gap-6 md:grid-cols-[1fr_1fr] md:items-end">
           <div>
             <Reveal className="eyebrow">Conteúdo</Reveal>
             <Reveal delay={80}>
-              <h2 className="display mt-8 text-[clamp(2.2rem,7vw,5.5rem)]">
+              <h2 className="display mt-6 text-[clamp(2.2rem,7vw,5.5rem)]">
                 CONTEÚDO
               </h2>
             </Reveal>
@@ -29,7 +29,7 @@ export function Sessions() {
           </Reveal>
         </div>
 
-        <Reveal delay={120} className="group mt-20 grid gap-10 md:grid-cols-[1.15fr_1fr] md:items-center">
+        <Reveal delay={120} className="group mt-14 grid gap-10 md:grid-cols-[1.15fr_1fr] md:items-center">
           <div className="overflow-hidden border border-border">
             <img
               src={feature.image}
