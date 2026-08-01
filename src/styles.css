@@ -13,8 +13,8 @@
   --radius-sm: calc(var(--radius) - 2px);
   --radius-md: var(--radius);
   --radius-lg: calc(var(--radius) + 2px);
-  --font-display: "Archivo", ui-sans-serif, system-ui, sans-serif;
-  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Figtree", ui-sans-serif, system-ui, sans-serif;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -42,19 +42,19 @@
   --card: oklch(0.11 0 0);
   --card-foreground: oklch(0.97 0.003 90);
   --graphite: oklch(0.16 0 0);
-  --primary: oklch(0.86 0.058 88);
+  --primary: oklch(0.93 0.002 90);
   --primary-foreground: oklch(0.08 0 0);
   --secondary: oklch(0.14 0 0);
   --secondary-foreground: oklch(0.97 0.003 90);
   --muted: oklch(0.14 0 0);
   --muted-foreground: oklch(0.66 0.006 90);
-  --accent: oklch(0.86 0.058 88);
+  --accent: oklch(0.93 0.002 90);
   --accent-foreground: oklch(0.08 0 0);
-  --champagne: oklch(0.86 0.058 88);
-  --champagne-dim: oklch(0.7 0.045 88);
+  --champagne: oklch(0.93 0.002 90);
+  --champagne-dim: oklch(0.7 0.002 90);
   --border: oklch(1 0 0 / 12%);
   --input: oklch(1 0 0 / 14%);
-  --ring: oklch(0.86 0.058 88 / 50%);
+  --ring: oklch(0.93 0.002 90 / 50%);
 }
 
 @layer base {
@@ -81,9 +81,9 @@
 
 @utility display {
   font-family: var(--font-display);
-  font-weight: 700;
-  letter-spacing: -0.03em;
-  line-height: 0.92;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 0.95;
   text-transform: uppercase;
 }
 
@@ -108,9 +108,9 @@
 @utility metal-text {
   background: linear-gradient(
     100deg,
-    oklch(0.72 0.04 88),
-    oklch(0.93 0.06 92),
-    oklch(0.74 0.045 85)
+    oklch(0.72 0.002 90),
+    oklch(0.98 0.001 90),
+    oklch(0.76 0.002 90)
   );
   background-clip: text;
   color: transparent;
@@ -188,4 +188,9 @@
   .marquee-track {
     animation: none;
   }
+}
+
+/* Carrossel de depoimentos — mais lento */
+.marquee-slow {
+  animation-duration: 60s;
 }
