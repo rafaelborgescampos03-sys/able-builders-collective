@@ -1,4 +1,4 @@
-import ableLogo from "@/assets/able-logo.png.asset.json";
+import ableLogo from "@/assets/able-logo-white.png.asset.json";
 
 import { Reveal } from "./Reveal";
 
@@ -21,7 +21,7 @@ export function Manifesto() {
             src={ableLogo.url}
             alt="ABLE — Ambitious, Builders, Leaders, Ecosystem"
             loading="lazy"
-            className="mt-10 w-full max-w-sm opacity-90"
+            className="mt-10 w-full max-w-md opacity-90"
           />
         </Reveal>
 

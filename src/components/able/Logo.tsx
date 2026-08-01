@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 
-import ableLogo from "@/assets/able-logo.png.asset.json";
+import ableLogo from "@/assets/able-logo-white.png.asset.json";
 
 /** Small decorative marker used in lists (no invented brand shape). */
 export function AbleMark({ className }: { className?: string }) {
@@ -17,7 +17,7 @@ export function AbleLogo({ className }: { className?: string }) {
     <img
       src={ableLogo.url}
       alt="ABLE — Ambitious, Builders, Leaders, Ecosystem"
-      className={cn("h-8 w-auto object-contain", className)}
+      className={cn("h-10 w-auto object-contain", className)}
     />
   );
 }
