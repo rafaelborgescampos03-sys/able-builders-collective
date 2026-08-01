@@ -1,9 +1,9 @@
 import tableImage from "@/assets/table.jpg";
 import ambTable from "@/assets/amb-table.jpg.asset.json";
 import ambPoker from "@/assets/amb-poker.jpg.asset.json";
-import logoTable from "@/assets/table-by-able-v2.png.asset.json";
-import logoCards from "@/assets/cards-co-v2.png.asset.json";
-import logoDrink from "@/assets/able-to-drink-v2.png.asset.json";
+import logoTable from "@/assets/table-by-able-f.png.asset.json";
+import logoCards from "@/assets/cards-co-f.png.asset.json";
+import logoDrink from "@/assets/able-to-drink-f.png.asset.json";
 import { Reveal } from "./Reveal";
 
 const experiences = [
