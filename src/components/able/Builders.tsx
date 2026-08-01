@@ -28,8 +28,7 @@ export function Builders() {
           <Reveal
             key={builder.name}
             delay={i * 90}
-            className="group flex w-full flex-col justify-between border border-border bg-background p-7 transition-colors duration-500 hover:bg-card sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] lg:max-w-sm"
-            style={{ minHeight: "14rem" }}
+            className="group flex min-h-[14rem] w-full flex-col justify-between border border-border bg-background p-7 transition-colors duration-500 hover:bg-card sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] lg:max-w-sm"
           >
             <div className="flex items-start justify-between gap-4">
               <span className="text-[0.6rem] uppercase tracking-[0.26em] text-champagne-dim">
