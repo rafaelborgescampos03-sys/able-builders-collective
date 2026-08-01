@@ -9,14 +9,14 @@ export function Sessions() {
 
 
   return (
-    <section id="sessions" className="border-y border-border bg-graphite/30">
+    <section id="conteudo" className="border-y border-border bg-graphite/30">
       <div className="mx-auto max-w-[1400px] px-6 py-28 md:px-10 md:py-36">
         <div className="grid gap-8 md:grid-cols-[1fr_1fr] md:items-end">
           <div>
             <Reveal className="eyebrow">Conteúdo</Reveal>
             <Reveal delay={80}>
               <h2 className="display mt-8 text-[clamp(2.2rem,7vw,5.5rem)]">
-                BUILDING <span className="metal-text">ABLE</span>
+                CONTEÚDO
               </h2>
             </Reveal>
           </div>

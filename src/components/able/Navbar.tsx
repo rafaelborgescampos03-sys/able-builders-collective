@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 const links = [
   { label: "O Ecossistema", href: "#ecossistema" },
   { label: "Builders", href: "#builders" },
-  { label: "Sessions", href: "#sessions" },
+  { label: "Conteúdo", href: "#conteudo" },
   
   { label: "Patrocinadores", href: "#patrocinadores" },
 ];
