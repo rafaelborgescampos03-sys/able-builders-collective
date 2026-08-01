@@ -16,10 +16,10 @@ export function FinalCTA() {
       </Reveal>
       <Reveal delay={200}>
         <a
-          href="mailto:hello@able.com.br?subject=Quero%20entrar%20na%20ABLE"
+          href="mailto:hello@able.com.br?subject=Quero%20entrar%20no%20Radar%20ABLE"
           className="mt-14 inline-block border border-champagne bg-champagne px-9 py-4 text-[0.65rem] uppercase tracking-[0.24em] text-primary-foreground transition-colors duration-300 hover:bg-transparent hover:text-champagne"
         >
-          Entrar na ABLE
+          Entrar no Radar ABLE
         </a>
       </Reveal>
     </section>
