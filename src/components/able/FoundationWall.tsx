@@ -5,24 +5,12 @@ import { Reveal } from "./Reveal";
 export function FoundationWall() {
   return (
     <section className="mx-auto max-w-[1400px] px-6 py-20 md:px-10 md:py-28">
-      <div className="grid gap-8 md:grid-cols-[1fr_1fr] md:items-end">
-        <div>
-          <Reveal className="eyebrow">Parceiros fundadores</Reveal>
-          <Reveal delay={80}>
-            <h2 className="display mt-6 text-[clamp(2.2rem,7vw,5.5rem)]">
-              The <span className="metal-text">Foundation</span>
-            </h2>
-          </Reveal>
-        </div>
-        <Reveal delay={160}>
-          <p className="max-w-md text-sm leading-relaxed text-muted-foreground md:text-base">
-            Cada conexão é uma construção.
-            <span className="block text-foreground">
-              Cada parceiro, parte da fundação.
-            </span>
-          </p>
-        </Reveal>
-      </div>
+      <Reveal>
+        <h2 className="display text-[clamp(2rem,6vw,4.5rem)]">
+          The <span className="metal-text">Foundation</span>
+        </h2>
+      </Reveal>
+
 
       <div className="mx-auto mt-14 grid max-w-xl gap-3">
         {foundation.map((block, i) => (

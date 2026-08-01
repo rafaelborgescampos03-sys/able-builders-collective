@@ -8,12 +8,6 @@ export function FinalCTA() {
           You don't have to <span className="metal-text">build alone.</span>
         </h2>
       </Reveal>
-      <Reveal delay={120}>
-        <p className="mx-auto mt-8 max-w-lg text-sm leading-relaxed text-muted-foreground md:text-base">
-          Entre para uma comunidade de pessoas que estão construindo o próximo
-          capítulo.
-        </p>
-      </Reveal>
       <Reveal delay={200}>
         <a
           href="mailto:hello@able.com.br?subject=Quero%20entrar%20no%20Radar%20ABLE"
