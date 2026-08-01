@@ -24,7 +24,7 @@ export function Hero() {
       />
       <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/40" />
 
-      <div className="relative mx-auto w-full max-w-[1400px] px-6 pb-4 pt-36 md:px-10 md:pb-6">
+      <div className="relative mx-auto w-full max-w-[1400px] px-6 pb-2 pt-36 md:px-10 md:pb-4">
         <Reveal className="eyebrow">Goiânia • Brasil</Reveal>
 
         <Reveal delay={100}>
