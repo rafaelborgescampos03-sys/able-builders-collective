@@ -1,71 +1,97 @@
 import { builders } from "@/data/able";
-import { AbleMark } from "./Logo";
 import { Reveal } from "./Reveal";
 
 export function Builders() {
+  const builder = builders[0];
+
   return (
     <section id="builders" className="mx-auto max-w-[1400px] px-6 py-28 md:px-10 md:py-40">
       <div className="grid gap-10 md:grid-cols-[1fr_1fr] md:items-end">
         <div>
-          <Reveal className="eyebrow">Membros</Reveal>
+          <Reveal className="eyebrow">Founder</Reveal>
           <Reveal delay={80}>
             <h2 className="display mt-8 text-[clamp(2.2rem,7vw,5.5rem)]">
-              The <span className="metal-text">Builders</span>
+              The <span className="metal-text">Builder</span>
             </h2>
           </Reveal>
         </div>
         <Reveal delay={160}>
           <p className="max-w-md text-sm leading-relaxed text-muted-foreground md:text-base">
-            A comunidade é formada por pessoas que estão construindo empresas,
-            projetos, marcas, carreiras e futuros. Cada nome aqui responde por
-            algo que está de pé.
+            A ABLE nasceu da convicção de que o futuro é construído por quem
+            executa. Conheça quem está por trás do ecossistema.
           </p>
         </Reveal>
       </div>
 
-      <div className="mt-16 flex flex-wrap justify-center gap-6 md:mt-20">
-        {builders.map((builder, i) => (
-          <Reveal
-            key={builder.name}
-            delay={i * 90}
-            className="group flex min-h-[14rem] w-full flex-col justify-between border border-border bg-background p-7 transition-colors duration-500 hover:bg-card sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] lg:max-w-sm"
-          >
-            <div className="flex items-start justify-between gap-4">
-              <span className="text-[0.6rem] uppercase tracking-[0.26em] text-champagne-dim">
-                {builder.category}
-              </span>
-              <AbleMark className="h-4 text-muted-foreground opacity-40 transition-opacity duration-500 group-hover:text-champagne group-hover:opacity-100" />
-            </div>
+      <div className="mt-16 border border-border md:mt-20">
+        <div className="grid md:grid-cols-[0.9fr_1.1fr]">
+          <Reveal className="relative aspect-[3/4] w-full overflow-hidden bg-muted md:aspect-auto">
+            {builder.photo ? (
+              <img
+                src={builder.photo}
+                alt={builder.name}
+                className="h-full w-full object-cover"
+              />
+            ) : (
+              <div className="flex h-full items-center justify-center text-muted-foreground">
+                Sem foto
+              </div>
+            )}
+          </Reveal>
 
+          <Reveal delay={120} className="flex flex-col justify-between p-8 md:p-12">
             <div>
-              <h3 className="display text-2xl transition-colors duration-500 group-hover:text-champagne">
-                {builder.name}
-              </h3>
-              <p className="mt-3 text-xs uppercase tracking-[0.16em] text-muted-foreground">
+              <p className="text-[0.6rem] uppercase tracking-[0.26em] text-champagne-dim">
                 {builder.role} — {builder.company}
               </p>
+              <h3 className="display mt-4 text-3xl md:text-4xl">{builder.name}</h3>
 
-              {builder.instagram ? (
-                <a
-                  href={builder.instagram}
-                  className="mt-6 inline-block text-[0.62rem] uppercase tracking-[0.2em] text-muted-foreground transition-colors hover:text-champagne"
-                >
-                  Instagram
-                </a>
-              ) : null}
+              <div className="mt-8 space-y-5 text-sm text-muted-foreground">
+                <p>
+                  <span className="block text-[0.62rem] uppercase tracking-[0.2em] text-foreground/60">
+                    Idade
+                  </span>
+                  {builder.age} anos
+                </p>
+                <p>
+                  <span className="block text-[0.62rem] uppercase tracking-[0.2em] text-foreground/60">
+                    Formação
+                  </span>
+                  {builder.education}
+                </p>
+                <p>
+                  <span className="block text-[0.62rem] uppercase tracking-[0.2em] text-foreground/60">
+                    Local
+                  </span>
+                  {builder.location}
+                </p>
+                <div>
+                  <span className="block text-[0.62rem] uppercase tracking-[0.2em] text-foreground/60">
+                    Founder of
+                  </span>
+                  <ul className="mt-2 space-y-1.5">
+                    {builder.founded.map((company) => (
+                      <li key={company} className="flex items-center gap-3 text-foreground/80">
+                        <span className="text-champagne">—</span>
+                        {company}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
             </div>
-          </Reveal>
-        ))}
-      </div>
 
-      <Reveal delay={120} className="mt-12">
-        <a
-          href="#entrar"
-          className="inline-block border border-border px-7 py-4 text-[0.65rem] uppercase tracking-[0.24em] transition-colors duration-300 hover:border-champagne hover:text-champagne"
-        >
-          Candidatar-se
-        </a>
-      </Reveal>
+            {builder.instagram ? (
+              <a
+                href={builder.instagram}
+                className="mt-10 inline-block self-start border border-border px-7 py-4 text-[0.65rem] uppercase tracking-[0.24em] transition-colors duration-300 hover:border-champagne hover:text-champagne"
+              >
+                Instagram
+              </a>
+            ) : null}
+          </Reveal>
+        </div>
+      </div>
     </section>
   );
 }
