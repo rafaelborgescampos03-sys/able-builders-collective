@@ -32,12 +32,12 @@ const experiences = [
 
 export function Experiences() {
   return (
-    <section id="eventos" className="mx-auto max-w-[1400px] px-6 py-24 md:px-10 md:py-32">
-      <div className="grid gap-8 md:grid-cols-[1fr_1fr] md:items-end">
+    <section id="eventos" className="mx-auto max-w-[1400px] px-6 py-16 md:px-10 md:py-24">
+      <div className="grid gap-6 md:grid-cols-[1fr_1fr] md:items-end">
         <div>
           <Reveal className="eyebrow">Encontros privados</Reveal>
           <Reveal delay={80}>
-            <h2 className="display mt-8 text-[clamp(2.2rem,6.4vw,5rem)]">
+            <h2 className="display mt-6 text-[clamp(2.2rem,6.4vw,5rem)]">
               OS <span className="metal-text">EVENTOS</span>
             </h2>
           </Reveal>
@@ -53,7 +53,7 @@ export function Experiences() {
         </Reveal>
       </div>
 
-      <div className="mt-16 grid gap-px border border-border bg-border md:grid-cols-3">
+      <div className="mt-12 grid gap-px border border-border bg-border md:grid-cols-3">
         {experiences.map((item, i) => (
           <Reveal
             key={item.name}

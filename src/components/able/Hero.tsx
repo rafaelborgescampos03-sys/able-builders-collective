@@ -13,7 +13,7 @@ export function Hero() {
   }, []);
 
   return (
-    <section id="top" className="relative flex min-h-[75svh] items-end overflow-hidden">
+    <section id="top" className="relative flex min-h-[60svh] items-end overflow-hidden">
       <img
         src={heroImage}
         alt="Composição arquitetônica abstrata em preto com linhas douradas"
@@ -24,18 +24,18 @@ export function Hero() {
       />
       <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/40" />
 
-      <div className="relative mx-auto w-full max-w-[1400px] px-6 pb-2 pt-36 md:px-10 md:pb-4">
+      <div className="relative mx-auto w-full max-w-[1400px] px-6 pb-1 pt-28 md:px-10 md:pb-2 md:pt-32">
         <Reveal className="eyebrow">Goiânia • Brasil</Reveal>
 
         <Reveal delay={100}>
-          <h1 className="display mt-8 text-[clamp(2.9rem,11vw,9.5rem)]">
+          <h1 className="display mt-6 text-[clamp(2.9rem,11vw,9.5rem)]">
             Building
             <br />
             the <span className="metal-text">future.</span>
           </h1>
         </Reveal>
 
-        <div className="mt-10 grid gap-8 md:grid-cols-[minmax(0,1fr)_auto] md:items-end">
+        <div className="mt-8 grid gap-6 md:grid-cols-[minmax(0,1fr)_auto] md:items-end">
           <Reveal delay={200} className="max-w-md">
             <p className="text-sm leading-relaxed text-muted-foreground md:text-base">
               Uma comunidade para quem não espera o futuro acontecer.
@@ -58,13 +58,6 @@ export function Hero() {
             </a>
           </Reveal>
         </div>
-
-        <Reveal delay={400} className="mt-10">
-          <div className="hairline" />
-          <p className="mt-3 text-[0.62rem] uppercase tracking-[0.42em] text-champagne-dim">
-            Ambition • Builders • Leaders • Ecosystem
-          </p>
-        </Reveal>
       </div>
     </section>
   );

@@ -5,12 +5,12 @@ export function Builders() {
   const builder = builders[0]!;
 
   return (
-    <section id="the-builder" className="mx-auto max-w-[1400px] px-6 py-28 md:px-10 md:py-40">
-      <div className="grid gap-10 md:grid-cols-[1fr_1fr] md:items-end">
+    <section id="the-builder" className="mx-auto max-w-[1400px] px-6 py-20 md:px-10 md:py-28">
+      <div className="grid gap-8 md:grid-cols-[1fr_1fr] md:items-end">
         <div>
           <Reveal className="eyebrow">Founder</Reveal>
           <Reveal delay={80}>
-            <h2 className="display mt-8 text-[clamp(2.2rem,7vw,5.5rem)]">
+            <h2 className="display mt-6 text-[clamp(2.2rem,7vw,5.5rem)]">
               The <span className="metal-text">Builder</span>
             </h2>
           </Reveal>
@@ -23,14 +23,14 @@ export function Builders() {
         </Reveal>
       </div>
 
-      <div className="mt-16 border border-border md:mt-20">
+      <div className="mt-12 border border-border md:mt-16">
         <div className="grid md:grid-cols-[0.55fr_1.45fr]">
-          <Reveal className="relative aspect-[3/4] w-full overflow-hidden bg-muted md:aspect-auto">
+          <Reveal className="relative aspect-[2/3] w-full overflow-hidden bg-muted md:aspect-auto">
             {builder.photo ? (
               <img
                 src={builder.photo}
                 alt={builder.name}
-                className="h-full w-full object-cover"
+                className="h-full w-full object-cover object-top"
               />
             ) : (
               <div className="flex h-full items-center justify-center text-muted-foreground">

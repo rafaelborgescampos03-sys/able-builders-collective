@@ -10,16 +10,16 @@ const pillars = [
 export function Pillars() {
   return (
     <section id="ecossistema" className="border-y border-border bg-graphite/30">
-      <div className="mx-auto max-w-[1400px] px-6 py-24 md:px-10 md:py-32">
+      <div className="mx-auto max-w-[1400px] px-6 py-16 md:px-10 md:py-24">
         <Reveal className="eyebrow">O que é a ABLE</Reveal>
         <Reveal delay={80}>
-          <p className="mt-8 max-w-xl text-sm leading-relaxed text-muted-foreground md:text-base">
+          <p className="mt-6 max-w-xl text-sm leading-relaxed text-muted-foreground md:text-base">
             Um ecossistema construído sobre quatro princípios. Eles definem quem
             entra, como nos relacionamos e o que fazemos juntos.
           </p>
         </Reveal>
 
-        <div className="mt-20 divide-y divide-border border-t border-border">
+        <div className="mt-12 divide-y divide-border border-t border-border">
           {pillars.map((pillar, i) => (
             <Reveal
               key={pillar.title}

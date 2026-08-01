@@ -9,14 +9,11 @@ const links = [
 export function Footer() {
   return (
     <footer className="border-t border-border">
-      <div className="mx-auto max-w-[1400px] px-6 py-16 md:px-10 md:py-20">
-        <div className="grid gap-12 md:grid-cols-[1fr_auto] md:items-start">
+      <div className="mx-auto max-w-[1400px] px-6 py-12 md:px-10 md:py-16">
+        <div className="grid gap-10 md:grid-cols-[1fr_auto] md:items-start">
           <div>
             <AbleLogo />
-            <p className="mt-6 text-[0.62rem] uppercase tracking-[0.36em] text-champagne-dim">
-              Ambition • Builders • Leaders • Ecosystem
-            </p>
-            <p className="mt-6 max-w-xs text-xs leading-relaxed text-muted-foreground">
+            <p className="mt-4 max-w-xs text-xs leading-relaxed text-muted-foreground">
               Goiânia — Goiás, Brasil.
             </p>
           </div>
