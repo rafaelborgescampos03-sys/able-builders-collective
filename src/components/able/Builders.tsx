@@ -5,7 +5,7 @@ export function Builders() {
   const builder = builders[0]!;
 
   return (
-    <section id="builders" className="mx-auto max-w-[1400px] px-6 py-28 md:px-10 md:py-40">
+    <section id="the-builder" className="mx-auto max-w-[1400px] px-6 py-28 md:px-10 md:py-40">
       <div className="grid gap-10 md:grid-cols-[1fr_1fr] md:items-end">
         <div>
           <Reveal className="eyebrow">Founder</Reveal>
