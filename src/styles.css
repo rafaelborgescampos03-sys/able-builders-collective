@@ -50,11 +50,11 @@
   --muted-foreground: oklch(0.66 0.006 90);
   --accent: oklch(0.93 0.002 90);
   --accent-foreground: oklch(0.08 0 0);
-  --champagne: oklch(0.93 0.002 90);
-  --champagne-dim: oklch(0.7 0.002 90);
+  --champagne: oklch(0.93 0.018 82);
+  --champagne-dim: oklch(0.76 0.014 82);
   --border: oklch(1 0 0 / 12%);
   --input: oklch(1 0 0 / 14%);
-  --ring: oklch(0.93 0.002 90 / 50%);
+  --ring: oklch(0.93 0.018 82 / 45%);
 }
 
 @layer base {
