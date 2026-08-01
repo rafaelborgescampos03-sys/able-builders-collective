@@ -92,7 +92,7 @@ export function Builders() {
                 href={builder.instagram}
                 className="mt-8 inline-block self-start border border-border px-7 py-3.5 text-[0.65rem] uppercase tracking-[0.24em] transition-colors duration-300 hover:border-champagne hover:text-champagne"
               >
-                Instagram
+                @RAFAELBORGESCAMPOS
               </a>
             ) : null}
           </Reveal>
