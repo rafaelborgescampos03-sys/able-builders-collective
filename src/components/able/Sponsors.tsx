@@ -19,10 +19,10 @@ export function Sponsors() {
             empreendedores, founders e builders, vamos conversar.
           </p>
           <a
-            href="mailto:contato@ableecosystem.com?subject=Quero%20patrocinar%20a%20ABLE"
+            href="mailto:contato@ableecosystem.com?subject=Quero%20ser%20Founding%20Partner%20ABLE"
             className="mt-8 inline-block border border-champagne/60 px-8 py-4 text-[0.65rem] uppercase tracking-[0.24em] text-champagne transition-colors duration-300 hover:bg-champagne hover:text-primary-foreground"
           >
-            Entrar em contato
+            Seja um Founding Partner ABLE
           </a>
         </Reveal>
       </div>
