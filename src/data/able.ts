@@ -1,4 +1,6 @@
 import sessionThiagoMalta from "@/assets/session-thiago-malta.jpg";
+import foundationB2 from "@/assets/foundation-b2-eventos.png.asset.json";
+
 
 /** Placeholder content — replace with CMS/database data later. */
 
