@@ -14,7 +14,7 @@ function Caption({
 }) {
   const detail = [role, company].filter(Boolean).join(" · ");
   return (
-    <figcaption className="mt-8 text-[0.62rem] uppercase tracking-[0.24em] text-muted-foreground">
+    <figcaption className="mt-5 text-[0.6rem] uppercase tracking-[0.22em] text-muted-foreground">
       {instagram ? (
         <a
           href={instagram}
@@ -32,18 +32,22 @@ function Caption({
   );
 }
 
+const cardClass =
+  "w-[270px] shrink-0 border border-border bg-background/50 p-6 sm:w-[320px]";
+
 export function MentorQuotes() {
   if (mentorQuotes.length === 0) return null;
 
-  // Com poucas falas, mostramos os cartões parados e centralizados.
-  // Com 4 ou mais, viram um carrossel contínuo.
-  const isCarousel = mentorQuotes.length >= 4;
-  const track = [...mentorQuotes, ...mentorQuotes];
+  // Com 2 ou mais falas, vira carrossel contínuo (igual ao dos eventos).
+  // Repetimos a lista para o giro ficar contínuo, sem espaços vazios.
+  const isCarousel = mentorQuotes.length >= 2;
+  const repeat = Math.max(2, Math.ceil(6 / mentorQuotes.length));
+  const track = Array.from({ length: repeat * 2 }, () => mentorQuotes).flat();
 
   return (
     <section id="depoimentos" className="border-y border-border">
-      <div className="py-20 md:py-28">
-        <Reveal className="mx-auto mb-14 max-w-[1400px] px-6 md:px-10">
+      <div className="py-16 md:py-24">
+        <Reveal className="mx-auto mb-10 max-w-[1400px] px-6 md:px-10">
           <h2 className="display text-[clamp(2rem,6vw,4.5rem)]">
             O que nossos <span className="metal-text">mentores</span> falam
           </h2>
@@ -54,14 +58,16 @@ export function MentorQuotes() {
             <div className="marquee">
               <div className="marquee-track marquee-slow">
                 {track.map((t, i) => (
-                  <figure
-                    key={`${t.name}-${i}`}
-                    className="w-[78vw] shrink-0 border border-border bg-background/50 p-8 sm:w-[420px] md:p-10"
-                  >
-                    <blockquote className="text-base leading-relaxed text-foreground md:text-lg">
+                  <figure key={`${t.name}-${i}`} className={cardClass}>
+                    <blockquote className="text-sm leading-relaxed text-foreground">
                       &ldquo;{t.quote}&rdquo;
                     </blockquote>
-                    <Caption name={t.name} role={t.role} company={t.company} instagram={t.instagram} />
+                    <Caption
+                      name={t.name}
+                      role={t.role}
+                      company={t.company}
+                      instagram={t.instagram}
+                    />
                   </figure>
                 ))}
               </div>
@@ -70,15 +76,17 @@ export function MentorQuotes() {
         ) : (
           <div className="mx-auto flex max-w-[1400px] flex-wrap gap-4 px-6 md:px-10">
             {mentorQuotes.map((t) => (
-              <Reveal
-                key={t.name}
-                className="w-full border border-border bg-background/50 p-8 md:max-w-3xl md:p-12"
-              >
+              <Reveal key={t.name} className={cardClass}>
                 <figure>
-                  <blockquote className="text-xl leading-relaxed text-foreground md:text-2xl">
+                  <blockquote className="text-sm leading-relaxed text-foreground">
                     &ldquo;{t.quote}&rdquo;
                   </blockquote>
-                  <Caption name={t.name} role={t.role} company={t.company} instagram={t.instagram} />
+                  <Caption
+                    name={t.name}
+                    role={t.role}
+                    company={t.company}
+                    instagram={t.instagram}
+                  />
                 </figure>
               </Reveal>
             ))}
