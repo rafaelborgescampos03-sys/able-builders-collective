@@ -207,4 +207,12 @@ export const mentorQuotes: MentorQuote[] = [
     company: "Salserin Bar",
     instagram: "https://www.instagram.com/salserin.go",
   },
+  {
+    quote:
+      "A ABLE nasce do desejo do Rafael de reunir pessoas para conversar sobre negócios e trocar ideias. É sair um pouco do nosso ciclo de amigos e estar aberto a novas amizades com jovens que pensam como nós.",
+    name: "Lucas Lara",
+    role: "Founder",
+    company: "Esquina 22 Bar",
+    instagram: "https://www.instagram.com/esquina22bar",
+  },
 ];
