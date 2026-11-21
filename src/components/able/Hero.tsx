@@ -25,7 +25,7 @@ export function Hero() {
       />
       <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/40" />
 
-      <div className="relative mx-auto w-full max-w-[1400px] px-6 pb-14 pt-28 md:px-10 md:pb-20 md:pt-32">
+      <div className="relative mx-auto w-full max-w-[1400px] px-6 pb-14 pt-28 text-center md:px-10 md:pb-20 md:pt-32">
         <Reveal delay={100}>
           <h1 className="display text-[clamp(2.6rem,8.5vw,7.5rem)]">
             Empreender
@@ -34,7 +34,7 @@ export function Hero() {
           </h1>
         </Reveal>
 
-        <Reveal delay={220} className="mt-10 flex flex-wrap items-center gap-x-10 gap-y-5">
+        <Reveal delay={220} className="mt-10 flex flex-wrap items-center justify-center gap-x-10 gap-y-5">
           <a
             href="https://www.ableforms.org/"
             className="group inline-flex items-center gap-3 border-b border-champagne/70 pb-2 text-[0.7rem] uppercase tracking-[0.22em] text-champagne transition-colors duration-300 hover:text-foreground"
