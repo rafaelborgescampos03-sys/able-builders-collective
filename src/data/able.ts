@@ -156,3 +156,6 @@ export const stats = [
   { value: "+10", label: "Sessions" },
   { value: "+1.000", label: "Conexões" },
 ];
+
+/** Link do grupo/comunidade da ABLE no WhatsApp. */
+export const COMMUNITY_URL = "https://chat.whatsapp.com/ENUvvSVHQ5u1DaAwwzK4rJ?mode=gi_t";
