@@ -1,13 +1,19 @@
 import { mentors, type Mentor } from "@/data/able";
 import { Reveal } from "./Reveal";
 
-// A partir deste número de mentores a lista vira um carrossel vertical.
-const CAROUSEL_FROM = 5;
+// Quantos mentores ficam visíveis ao mesmo tempo.
+// Com mais mentores que isso, a lista vira um carrossel vertical (descendo).
+const VISIBLE = 3;
+// Altura fixa de cada linha, para a janela do carrossel mostrar exatamente VISIBLE linhas.
+const ROW_HEIGHT_REM = 6.5;
 
 function MentorRow({ m }: { m: Mentor }) {
   const detail = [m.role, m.company].filter(Boolean).join(" · ");
   return (
-    <div className="flex flex-wrap items-baseline justify-between gap-x-8 gap-y-2 border-b border-border py-6">
+    <div
+      className="flex items-center justify-between gap-6 border-b border-border"
+      style={{ height: `${ROW_HEIGHT_REM}rem` }}
+    >
       <div className="min-w-0">
         <p className="display text-2xl md:text-3xl">{m.name}</p>
         {detail && (
@@ -31,7 +37,7 @@ function MentorRow({ m }: { m: Mentor }) {
 }
 
 export function Sessions() {
-  const isCarousel = mentors.length >= CAROUSEL_FROM;
+  const isCarousel = mentors.length > VISIBLE;
 
   return (
     <section id="mentores" className="border-y border-border">
@@ -49,8 +55,11 @@ export function Sessions() {
 
         <Reveal delay={120} className="mt-12 max-w-3xl border-t border-border">
           {isCarousel ? (
-            <div className="vmarquee h-[26rem]">
-              <div className="vmarquee-track">
+            <div className="vmarquee" style={{ height: `${ROW_HEIGHT_REM * VISIBLE}rem` }}>
+              <div
+                className="vmarquee-track"
+                style={{ animationDuration: `${mentors.length * 7}s` }}
+              >
                 {[0, 1].map((copy) => (
                   <div key={copy} aria-hidden={copy === 1}>
                     {mentors.map((m) => (
