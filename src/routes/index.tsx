@@ -12,7 +12,6 @@ import { Manifesto } from "@/components/able/Manifesto";
 import { Navbar } from "@/components/able/Navbar";
 import { Pillars } from "@/components/able/Pillars";
 import { Sessions } from "@/components/able/Sessions";
-import { Testimonials } from "@/components/able/Testimonials";
 
 
 const title = "ABLE — Building the future.";
@@ -43,8 +42,6 @@ function Index() {
         <Experiences />
         
         <FoundationWall />
-        
-        <Testimonials />
         
         <Sponsors />
         
