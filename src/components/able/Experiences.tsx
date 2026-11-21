@@ -9,9 +9,15 @@ const modules = import.meta.glob("../../assets/eventos/*.{jpg,jpeg,png,webp,JPG,
   import: "default",
 }) as Record<string, string>;
 
-const photos = Object.keys(modules)
+const sorted = Object.keys(modules)
   .sort()
   .map((key) => modules[key]);
+
+// Ordem misturada: alterna fotos de ambientes diferentes (escuro / claro).
+// Fotos novas adicionadas na pasta entram no final.
+const mixedOrder = [8, 1, 9, 2, 10, 3, 11, 12, 4, 13, 5, 14, 6, 15, 7, 16, 17];
+const mixed = mixedOrder.map((n) => sorted[n - 1]).filter(Boolean);
+const photos = [...mixed, ...sorted.filter((src) => !mixed.includes(src))];
 
 export function Experiences() {
   if (photos.length === 0) return null;
