@@ -199,4 +199,12 @@ export const mentorQuotes: MentorQuote[] = [
     company: "UseBlox",
     instagram: "https://www.instagram.com/portoomatheus",
   },
+  {
+    quote:
+      "O que a ABLE faz é muito importante: reunir pessoas para conversar sobre negócios e descobrir como cada uma pode ajudar a outra. Por isso, considero muito vantajoso que todos estejam aqui hoje.",
+    name: "Ricardo Leite",
+    role: "Founder",
+    company: "Salserin Bar",
+    instagram: "https://www.instagram.com/salserin.go",
+  },
 ];
