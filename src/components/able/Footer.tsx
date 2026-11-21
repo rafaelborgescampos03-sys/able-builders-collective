@@ -8,7 +8,7 @@ const links = [
 
 export function Footer() {
   return (
-    <footer className="border-t border-border">
+    <footer>
       <div className="mx-auto max-w-[1400px] px-6 py-12 md:px-10 md:py-16">
         <div className="grid gap-10 md:grid-cols-[1fr_auto] md:items-start">
           <div>
@@ -31,7 +31,6 @@ export function Footer() {
           </nav>
         </div>
 
-        <div className="mt-16 hairline" />
         <p className="mt-6 text-[0.6rem] uppercase tracking-[0.24em] text-muted-foreground">
           © 2026 ABLE. All rights reserved.
         </p>

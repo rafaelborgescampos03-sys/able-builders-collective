@@ -45,7 +45,7 @@ export function MentorQuotes() {
   const track = Array.from({ length: repeat * 2 }, () => mentorQuotes).flat();
 
   return (
-    <section id="depoimentos" className="border-y border-border">
+    <section id="depoimentos">
       <div className="py-16 md:py-24">
         <Reveal className="mx-auto mb-10 max-w-[1400px] px-6 md:px-10">
           <h2 className="display text-[clamp(2rem,6vw,4.5rem)]">

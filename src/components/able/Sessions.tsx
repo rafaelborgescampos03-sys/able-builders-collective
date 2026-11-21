@@ -40,7 +40,7 @@ export function Sessions() {
   const isCarousel = mentors.length > VISIBLE;
 
   return (
-    <section id="mentores" className="border-y border-border">
+    <section id="mentores">
       <div className="mx-auto max-w-[1400px] px-6 py-16 md:px-10 md:py-24">
         <Reveal>
           <h2 className="display text-[clamp(2rem,6vw,4.5rem)]">
