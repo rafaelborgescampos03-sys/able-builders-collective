@@ -6,7 +6,8 @@ import { COMMUNITY_URL } from "@/data/able";
 
 const links = [
   { label: "O Ecossistema", href: "#ecossistema" },
-  { label: "Builders", href: "#conteudo" },
+  { label: "Eventos", href: "#eventos" },
+  { label: "Mentores", href: "#mentores" },
   
   { label: "Patrocinadores", href: "#patrocinadores" },
 ];

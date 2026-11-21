@@ -17,7 +17,7 @@ export function AbleLogo({ className }: { className?: string }) {
     <img
       src={ableLogo.url}
       alt="ABLE — Ambitious, Builders, Leaders, Ecosystem"
-      className={cn("h-10 w-auto object-contain", className)}
+      className={cn("h-10 w-auto object-contain invert", className)}
     />
   );
 }

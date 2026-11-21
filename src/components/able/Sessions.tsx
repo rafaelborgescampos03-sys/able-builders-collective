@@ -1,15 +1,36 @@
-import { ContentMarquee } from "./ContentMarquee";
+import { mentors } from "@/data/able";
 import { Reveal } from "./Reveal";
 
 export function Sessions() {
   return (
-    <section id="conteudo" className="border-y border-border bg-graphite/30">
+    <section id="mentores" className="border-y border-border bg-graphite/30">
       <div className="mx-auto max-w-[1400px] px-6 py-16 md:px-10 md:py-24">
         <Reveal>
-          <h2 className="display text-[clamp(2rem,6vw,4.5rem)]">BUILDERS</h2>
+          <h2 className="display text-[clamp(2rem,6vw,4.5rem)]">
+            Nossos <span className="metal-text">mentores</span>
+          </h2>
+        </Reveal>
+        <Reveal delay={80}>
+          <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
+            Donos de grandes empresas que sentam com a gente, respondem as perguntas e contam o que já erraram.
+          </p>
         </Reveal>
 
-        <ContentMarquee />
+        <div className="mt-14 grid gap-px border border-border bg-border sm:grid-cols-2 lg:grid-cols-3">
+          {mentors.map((m, i) => (
+            <Reveal
+              key={m.name}
+              delay={(i % 3) * 80}
+              className="bg-background p-8 transition-colors duration-500 hover:bg-card md:p-10"
+            >
+              <p className="display text-2xl md:text-3xl">{m.name}</p>
+              <p className="mt-3 text-[0.7rem] uppercase tracking-[0.24em] text-muted-foreground">
+                {m.role ? `${m.role} · ` : ""}
+                {m.company}
+              </p>
+            </Reveal>
+          ))}
+        </div>
 
         <Reveal delay={100} className="mt-12 flex justify-center">
           <a
