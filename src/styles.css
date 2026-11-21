@@ -187,3 +187,34 @@
 .marquee-slow {
   animation-duration: 60s;
 }
+
+/* Carrossel vertical (mentores) */
+.vmarquee {
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+}
+
+.vmarquee-track {
+  animation: vmarquee-scroll 40s linear infinite;
+}
+
+@keyframes vmarquee-scroll {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .vmarquee-track {
+    animation: none;
+  }
+}
