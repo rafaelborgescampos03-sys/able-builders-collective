@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 
 import { AbleLogo } from "./Logo";
 import { cn } from "@/lib/utils";
+import { COMMUNITY_URL } from "@/data/able";
 
 const links = [
   { label: "O Ecossistema", href: "#ecossistema" },
@@ -49,8 +50,17 @@ export function Navbar() {
           </nav>
 
           <a
-            href="https://www.ableforms.org/"
+            href={COMMUNITY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="hidden shrink-0 border border-champagne/60 px-5 py-2.5 text-[0.65rem] uppercase tracking-[0.24em] text-champagne transition-colors duration-300 hover:bg-champagne hover:text-primary-foreground sm:inline-block"
+          >
+            Entre para a comunidade
+          </a>
+
+          <a
+            href="https://www.ableforms.org/"
+            className="hidden shrink-0 text-[0.65rem] uppercase tracking-[0.24em] text-muted-foreground transition-colors duration-300 hover:text-champagne xl:inline-block"
           >
             Entrar no Radar ABLE
           </a>
@@ -96,9 +106,18 @@ export function Navbar() {
             </a>
           ))}
           <a
-            href="https://www.ableforms.org/"
+            href={COMMUNITY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={() => setOpen(false)}
             className="mt-6 border border-champagne/60 px-5 py-3 text-center text-[0.65rem] uppercase tracking-[0.24em] text-champagne"
+          >
+            Entre para a comunidade
+          </a>
+          <a
+            href="https://www.ableforms.org/"
+            onClick={() => setOpen(false)}
+            className="mt-3 border border-border px-5 py-3 text-center text-[0.65rem] uppercase tracking-[0.24em] text-muted-foreground"
           >
             Entrar no Radar ABLE
           </a>
