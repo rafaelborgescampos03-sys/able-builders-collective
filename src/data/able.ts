@@ -174,6 +174,8 @@ export type Mentor = {
 export const mentors: Mentor[] = [
   { name: "Wilson Diego", role: "Founder", company: "Prolynk", instagram: "https://www.instagram.com/prolynk.oficial" },
   { name: "Matheus Gomes", role: "Founder", company: "UseBlox", instagram: "https://www.instagram.com/portoomatheus" },
+  { name: "Ricardo Leite", role: "Founder", company: "Salserin Bar", instagram: "https://www.instagram.com/salserin.go" },
+  { name: "Lucas Lara", role: "Founder", company: "Esquina 22 Bar", instagram: "https://www.instagram.com/esquina22bar" },
 ];
 
 /**
