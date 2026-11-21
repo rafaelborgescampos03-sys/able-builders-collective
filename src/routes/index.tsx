@@ -10,7 +10,6 @@ import { MentorQuotes } from "@/components/able/MentorQuotes";
 import { Hero } from "@/components/able/Hero";
 import { Manifesto } from "@/components/able/Manifesto";
 import { Navbar } from "@/components/able/Navbar";
-import { Pillars } from "@/components/able/Pillars";
 import { Sessions } from "@/components/able/Sessions";
 
 
@@ -38,7 +37,6 @@ function Index() {
         <Hero />
         <Manifesto />
         <Experiences />
-        <Pillars />
         <Sessions />
         <MentorQuotes />
         <Sponsors />
