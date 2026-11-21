@@ -53,7 +53,7 @@ export function Navbar() {
             href={COMMUNITY_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden shrink-0 border border-champagne/60 px-5 py-2.5 text-[0.65rem] uppercase tracking-[0.24em] text-champagne transition-colors duration-300 hover:bg-champagne hover:text-primary-foreground sm:inline-block"
+            className="hidden shrink-0 rounded-full bg-champagne px-5 py-2.5 text-sm font-bold text-primary-foreground transition-colors duration-300 hover:bg-champagne/85 sm:inline-block"
           >
             Entre para a comunidade
           </a>
@@ -110,7 +110,7 @@ export function Navbar() {
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setOpen(false)}
-            className="mt-6 border border-champagne/60 px-5 py-3 text-center text-[0.65rem] uppercase tracking-[0.24em] text-champagne"
+            className="mt-6 rounded-full bg-champagne px-5 py-3 text-center text-sm font-bold text-primary-foreground"
           >
             Entre para a comunidade
           </a>

@@ -51,7 +51,7 @@ export function Hero() {
             href={COMMUNITY_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 border border-champagne/60 px-6 py-3 text-[0.7rem] uppercase tracking-[0.22em] text-champagne transition-colors duration-300 hover:bg-champagne hover:text-primary-foreground"
+            className="inline-flex items-center gap-3 rounded-full bg-champagne px-7 py-4 text-sm font-bold text-primary-foreground transition-all duration-300 hover:-translate-y-0.5 hover:bg-champagne/85"
           >
             Entre para a comunidade
           </a>
