@@ -1,11 +1,33 @@
 import { mentorQuotes } from "@/data/able";
 import { Reveal } from "./Reveal";
 
-function Caption({ name, company }: { name: string; company?: string }) {
+function Caption({
+  name,
+  role,
+  company,
+  instagram,
+}: {
+  name: string;
+  role?: string;
+  company?: string;
+  instagram?: string;
+}) {
+  const detail = [role, company].filter(Boolean).join(" · ");
   return (
     <figcaption className="mt-8 text-[0.62rem] uppercase tracking-[0.24em] text-muted-foreground">
-      {name}
-      {company ? ` — ${company}` : ""}
+      {instagram ? (
+        <a
+          href={instagram}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="transition-colors duration-300 hover:text-champagne"
+        >
+          {name}
+        </a>
+      ) : (
+        name
+      )}
+      {detail ? ` — ${detail}` : ""}
     </figcaption>
   );
 }
@@ -39,7 +61,7 @@ export function MentorQuotes() {
                     <blockquote className="text-base leading-relaxed text-foreground md:text-lg">
                       &ldquo;{t.quote}&rdquo;
                     </blockquote>
-                    <Caption name={t.name} company={t.company} />
+                    <Caption name={t.name} role={t.role} company={t.company} instagram={t.instagram} />
                   </figure>
                 ))}
               </div>
@@ -56,7 +78,7 @@ export function MentorQuotes() {
                   <blockquote className="text-xl leading-relaxed text-foreground md:text-2xl">
                     &ldquo;{t.quote}&rdquo;
                   </blockquote>
-                  <Caption name={t.name} company={t.company} />
+                  <Caption name={t.name} role={t.role} company={t.company} instagram={t.instagram} />
                 </figure>
               </Reveal>
             ))}

@@ -29,6 +29,16 @@ export function Sessions() {
                   {[m.role, m.company].filter(Boolean).join(" · ")}
                 </p>
               )}
+              {m.instagram && (
+                <a
+                  href={m.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-6 inline-flex items-center gap-2 border-b border-champagne/70 pb-1 text-[0.65rem] uppercase tracking-[0.22em] text-champagne transition-colors duration-300 hover:text-foreground"
+                >
+                  Instagram <span aria-hidden="true">→</span>
+                </a>
+              )}
             </Reveal>
           ))}
         </div>
