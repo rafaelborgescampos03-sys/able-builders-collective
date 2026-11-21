@@ -159,3 +159,29 @@ export const stats = [
 
 /** Link do grupo/comunidade da ABLE no WhatsApp. */
 export const COMMUNITY_URL = "https://chat.whatsapp.com/ENUvvSVHQ5u1DaAwwzK4rJ?mode=gi_t";
+
+/**
+ * Mentores da ABLE e suas empresas.
+ * Para adicionar um mentor, basta acrescentar um item aqui.
+ */
+export type Mentor = {
+  name: string;
+  company: string;
+  role?: string;
+};
+
+export const mentors: Mentor[] = [
+  { name: "Thiago Malta", company: "B2 Eventos" },
+];
+
+/**
+ * "O que nossos mentores falam".
+ * Só coloque falas reais e autorizadas pelo mentor. Enquanto estiver vazio, a seção não aparece.
+ */
+export type MentorQuote = {
+  quote: string;
+  name: string;
+  company: string;
+};
+
+export const mentorQuotes: MentorQuote[] = [];
