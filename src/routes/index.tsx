@@ -6,7 +6,7 @@ import { Experiences } from "@/components/able/Experiences";
 import { Sponsors } from "@/components/able/Sponsors";
 import { FinalCTA } from "@/components/able/FinalCTA";
 import { Footer } from "@/components/able/Footer";
-import { FoundationWall } from "@/components/able/FoundationWall";
+import { MentorQuotes } from "@/components/able/MentorQuotes";
 import { Hero } from "@/components/able/Hero";
 import { Manifesto } from "@/components/able/Manifesto";
 import { Navbar } from "@/components/able/Navbar";
@@ -37,12 +37,10 @@ function Index() {
       <main>
         <Hero />
         <Manifesto />
+        <Experiences />
         <Pillars />
         <Sessions />
-        <Experiences />
-        
-        <FoundationWall />
-        
+        <MentorQuotes />
         <Sponsors />
         
         <FinalCTA />
