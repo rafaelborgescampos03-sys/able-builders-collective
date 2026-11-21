@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import { COMMUNITY_URL } from "@/data/able";
 
 const links = [
+  { label: "Hackathon", href: "#hackathon" },
   { label: "Eventos", href: "#eventos" },
   { label: "Mentores", href: "#mentores" },
   
