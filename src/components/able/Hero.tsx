@@ -20,22 +20,17 @@ export function Hero() {
         alt="Composição arquitetônica abstrata em preto com linhas douradas"
         width={1920}
         height={1200}
-        className="absolute inset-0 h-full w-full scale-105 object-cover opacity-70"
+        className="absolute inset-0 h-full w-full scale-105 object-cover opacity-[0.12] grayscale"
         style={{ transform: `translate3d(0, ${offset}px, 0) scale(1.06)` }}
       />
       <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/40" />
 
       <div className="relative mx-auto w-full max-w-[1400px] px-6 pb-14 pt-28 md:px-10 md:pb-20 md:pt-32">
-        <Reveal className="eyebrow flex items-center gap-3">
-          <span className="h-1.5 w-1.5 rounded-full bg-champagne/70" aria-hidden="true" />
-          Goiânia • Brasil
-        </Reveal>
-
         <Reveal delay={100}>
-          <h1 className="display mt-6 text-[clamp(2.9rem,11vw,9.5rem)]">
-            Building
+          <h1 className="display text-[clamp(2.6rem,8.5vw,7.5rem)]">
+            Empreender
             <br />
-            the <span className="metal-text">future.</span>
+            não precisa ser <span className="metal-text">sozinho.</span>
           </h1>
         </Reveal>
 
