@@ -1,40 +1,22 @@
-import { useEffect, useState } from "react";
-
-import heroImage from "@/assets/hero.jpg";
 import { COMMUNITY_URL } from "@/data/able";
 import { Reveal } from "./Reveal";
 
 export function Hero() {
-  const [offset, setOffset] = useState(0);
-
-  useEffect(() => {
-    const onScroll = () => setOffset(Math.min(window.scrollY, 700) * 0.08);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
   return (
-    <section id="top" className="relative flex min-h-[60svh] items-end overflow-hidden">
-      <img
-        src={heroImage}
-        alt="Composição arquitetônica abstrata em preto com linhas douradas"
-        width={1920}
-        height={1200}
-        className="absolute inset-0 h-full w-full scale-105 object-cover opacity-70"
-        style={{ transform: `translate3d(0, ${offset}px, 0) scale(1.06)` }}
-      />
-      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/40" />
-
-      <div className="relative mx-auto w-full max-w-[1400px] px-6 pb-14 pt-28 text-center md:px-10 md:pb-20 md:pt-32">
+    <section id="top" className="relative flex min-h-[90svh] items-center justify-center bg-background">
+      <div className="relative mx-auto w-full max-w-[1400px] px-6 py-40 text-center md:px-10 md:py-48">
         <Reveal delay={100}>
-          <h1 className="display text-[clamp(2.6rem,8.5vw,7.5rem)]">
+          <h1
+            className="display text-[clamp(2.4rem,7.5vw,6.5rem)]"
+            style={{ letterSpacing: "-0.02em", wordSpacing: "0.14em", lineHeight: 1.15 }}
+          >
             Empreender
             <br />
             não precisa ser <span className="metal-text">sozinho.</span>
           </h1>
         </Reveal>
 
-        <Reveal delay={220} className="mt-10 flex flex-wrap items-center justify-center gap-x-10 gap-y-5">
+        <Reveal delay={220} className="mt-16 flex flex-wrap items-center justify-center gap-x-10 gap-y-6">
           <a
             href="https://www.ableforms.org/"
             className="group inline-flex items-center gap-3 border-b border-champagne/70 pb-2 text-[0.7rem] uppercase tracking-[0.22em] text-champagne transition-colors duration-300 hover:text-foreground"
@@ -52,7 +34,6 @@ export function Hero() {
           </a>
         </Reveal>
       </div>
-
     </section>
   );
 }
