@@ -206,10 +206,10 @@
 
 @keyframes vmarquee-scroll {
   from {
-    transform: translateY(0);
+    transform: translateY(-50%);
   }
   to {
-    transform: translateY(-50%);
+    transform: translateY(0);
   }
 }
 
