@@ -166,12 +166,13 @@ export const COMMUNITY_URL = "https://chat.whatsapp.com/ENUvvSVHQ5u1DaAwwzK4rJ?m
  */
 export type Mentor = {
   name: string;
-  company: string;
+  company?: string;
   role?: string;
 };
 
 export const mentors: Mentor[] = [
   { name: "Thiago Malta", company: "B2 Eventos" },
+  { name: "Matheus Gomes" },
 ];
 
 /**
@@ -181,7 +182,13 @@ export const mentors: Mentor[] = [
 export type MentorQuote = {
   quote: string;
   name: string;
-  company: string;
+  company?: string;
 };
 
-export const mentorQuotes: MentorQuote[] = [];
+export const mentorQuotes: MentorQuote[] = [
+  {
+    quote:
+      "Fiquei muito feliz em estar presente. É um projeto para jovens empreendedores de Goiânia, todo mundo jovem e com sede de vencer, e isso para mim não tem preço. Eu já me enxerguei assim quando comecei. Pode contar comigo sempre!",
+    name: "Matheus Gomes",
+  },
+];
