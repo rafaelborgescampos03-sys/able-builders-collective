@@ -63,7 +63,7 @@ export function Navbar() {
             href="https://www.ableforms.org/"
             className="hidden shrink-0 text-[0.65rem] uppercase tracking-[0.24em] text-muted-foreground transition-colors duration-300 hover:text-champagne xl:inline-block"
           >
-            Entrar no Radar ABLE
+            Quero participar da pré-venda
           </a>
 
           <button
@@ -120,7 +120,7 @@ export function Navbar() {
             onClick={() => setOpen(false)}
             className="mt-3 border border-border px-5 py-3 text-center text-[0.65rem] uppercase tracking-[0.24em] text-muted-foreground"
           >
-            Entrar no Radar ABLE
+            Quero participar da pré-venda
           </a>
         </nav>
       </div>

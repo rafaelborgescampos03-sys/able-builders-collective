@@ -11,7 +11,7 @@ export function Manifesto() {
             src={ableLogo.url}
             alt="ABLE — Ambitious, Builders, Leaders, Ecosystem"
             loading="lazy"
-            className="w-full max-w-[15rem] invert opacity-90 md:max-w-xs"
+            className="w-full max-w-[15rem] opacity-90 md:max-w-xs"
           />
         </Reveal>
 

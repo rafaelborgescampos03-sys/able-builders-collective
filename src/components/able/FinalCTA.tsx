@@ -14,7 +14,7 @@ export function FinalCTA() {
           href="https://www.ableforms.org/"
           className="group inline-flex items-center gap-3 border-b border-champagne/70 pb-2 text-[0.7rem] uppercase tracking-[0.22em] text-champagne transition-colors duration-300 hover:text-foreground"
         >
-          Entrar no Radar ABLE
+          Quero participar da pré-venda
           <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
         </a>
         <a
