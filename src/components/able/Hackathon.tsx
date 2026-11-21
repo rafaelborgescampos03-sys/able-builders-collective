@@ -5,12 +5,11 @@ export function Hackathon() {
   return (
     <section id="hackathon">
       <div className="mx-auto max-w-[1400px] px-6 py-10 md:px-10 md:py-14">
-        <Reveal className="flex items-center gap-3">
-          <span className="relative flex h-1.5 w-1.5" aria-hidden="true">
-            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-champagne opacity-60" />
-            <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-champagne" />
+        <Reveal>
+          <span className="inline-flex items-center gap-3 rounded-full border border-border px-4 py-2">
+            <span className="live-dot" aria-hidden="true" />
+            <span className="eyebrow live-text text-foreground">Ao vivo · Acontecendo agora</span>
           </span>
-          <span className="eyebrow">Acontecendo agora</span>
         </Reveal>
 
         <div className="mt-5 flex flex-wrap items-center justify-between gap-x-10 gap-y-5">
