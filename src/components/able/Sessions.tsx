@@ -58,7 +58,7 @@ export function Sessions() {
             <div className="vmarquee" style={{ height: `${ROW_HEIGHT_REM * VISIBLE}rem` }}>
               <div
                 className="vmarquee-track"
-                style={{ animationDuration: `${mentors.length * 7}s` }}
+                style={{ animationDuration: `${mentors.length * 5}s` }}
               >
                 {[0, 1].map((copy) => (
                   <div key={copy} aria-hidden={copy === 1}>
