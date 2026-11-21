@@ -3,7 +3,7 @@ import { Reveal } from "./Reveal";
 
 export function Hackathon() {
   return (
-    <section id="hackathon" className="border-y border-border">
+    <section id="hackathon">
       <div className="mx-auto max-w-[1400px] px-6 py-10 md:px-10 md:py-14">
         <Reveal className="flex items-center gap-3">
           <span className="relative flex h-1.5 w-1.5" aria-hidden="true">
