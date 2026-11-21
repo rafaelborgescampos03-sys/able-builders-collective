@@ -168,11 +168,12 @@ export type Mentor = {
   name: string;
   company?: string;
   role?: string;
+  instagram?: string;
 };
 
 export const mentors: Mentor[] = [
   { name: "Thiago Malta", company: "B2 Eventos" },
-  { name: "Matheus Gomes" },
+  { name: "Matheus Gomes", instagram: "https://www.instagram.com/portoomatheus" },
 ];
 
 /**
@@ -183,6 +184,7 @@ export type MentorQuote = {
   quote: string;
   name: string;
   company?: string;
+  instagram?: string;
 };
 
 export const mentorQuotes: MentorQuote[] = [
@@ -190,5 +192,6 @@ export const mentorQuotes: MentorQuote[] = [
     quote:
       "Fiquei muito feliz em estar presente. É um projeto para jovens empreendedores de Goiânia, todo mundo jovem e com sede de vencer, e isso para mim não tem preço. Eu já me enxerguei assim quando comecei. Pode contar comigo sempre!",
     name: "Matheus Gomes",
+    instagram: "https://www.instagram.com/portoomatheus",
   },
 ];
