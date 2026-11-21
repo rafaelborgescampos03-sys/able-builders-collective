@@ -3,7 +3,7 @@ import { AbleLogo } from "./Logo";
 const links = [
   { label: "Instagram", href: "https://www.instagram.com/able.ecosystem/?utm_source=ig_web_button_share_sheet" },
   { label: "YouTube", href: "https://youtube.com/@able.ecosystem?si=hTYz8mpiSdxZ37rk" },
-  { label: "Contato", href: "mailto:hello@able.com.br" },
+  { label: "Contato", href: "https://wa.me/5562998031100" },
 ];
 
 export function Footer() {
@@ -23,6 +23,8 @@ export function Footer() {
               <a
                 key={link.label}
                 href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-[0.65rem] uppercase tracking-[0.24em] text-muted-foreground transition-colors duration-300 hover:text-champagne"
               >
                 {link.label}
