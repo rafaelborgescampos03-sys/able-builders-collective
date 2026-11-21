@@ -24,10 +24,11 @@ export function Sessions() {
               className="bg-background p-8 transition-colors duration-500 hover:bg-card md:p-10"
             >
               <p className="display text-2xl md:text-3xl">{m.name}</p>
-              <p className="mt-3 text-[0.7rem] uppercase tracking-[0.24em] text-muted-foreground">
-                {m.role ? `${m.role} · ` : ""}
-                {m.company}
-              </p>
+              {(m.role || m.company) && (
+                <p className="mt-3 text-[0.7rem] uppercase tracking-[0.24em] text-muted-foreground">
+                  {[m.role, m.company].filter(Boolean).join(" · ")}
+                </p>
+              )}
             </Reveal>
           ))}
         </div>
